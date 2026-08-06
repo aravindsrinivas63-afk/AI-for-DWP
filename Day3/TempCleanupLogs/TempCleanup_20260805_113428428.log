@@ -1,0 +1,13 @@
+2026-08-05 11:34:28.438 [INFO] Temp file cleanup script started.
+2026-08-05 11:34:28.482 [INFO] Mode: DryRun
+2026-08-05 11:34:28.484 [INFO] DaysOld cutoff: 0
+2026-08-05 11:34:28.506 [INFO] Target paths: c:\Users\labuser\Documents\training\Day3\cleanup-test-target
+2026-08-05 11:34:28.507 [INFO] Log file: C:\Users\labuser\Documents\training\Day3\TempCleanupLogs\TempCleanup_20260805_113428428.log
+2026-08-05 11:34:28.525 [INFO] Scanning path: c:\Users\labuser\Documents\training\Day3\cleanup-test-target
+2026-08-05 11:34:28.548 [INFO] Cleanup run complete.
+2026-08-05 11:34:28.548 [INFO] Scanned items: 0
+2026-08-05 11:34:28.556 [INFO] Eligible items: 0
+2026-08-05 11:34:28.562 [INFO] Files deleted or restored: 0
+2026-08-05 11:34:28.565 [INFO] Locked or in-use items skipped: 0
+2026-08-05 11:34:28.567 [INFO] Missing or unavailable items skipped: 0
+2026-08-05 11:34:28.572 [INFO] Errors: 0

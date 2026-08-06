@@ -1,0 +1,1178 @@
+[
+    {
+        "SourcePath":  "C:\\Users\\labuser\\AppData\\Local\\Temp\\2\\exthost-75b90d.cpuprofile",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root0\\2\\exthost-75b90d.cpuprofile",
+        "OriginalRoot":  "C:\\Users\\labuser\\AppData\\Local\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930051986)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:51 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785927242928)\/",
+        "LengthBytes":  158336
+    },
+    {
+        "SourcePath":  "C:\\Users\\labuser\\AppData\\Local\\Temp\\2\\f96a9679-b084-4717-a8c4-0a7632915fa2.tmp",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root0\\2\\f96a9679-b084-4717-a8c4-0a7632915fa2.tmp",
+        "OriginalRoot":  "C:\\Users\\labuser\\AppData\\Local\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930051986)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:51 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785919048197)\/",
+        "LengthBytes":  0
+    },
+    {
+        "SourcePath":  "C:\\Users\\labuser\\AppData\\Local\\Temp\\2\\gen_py\\3.9\\dicts.dat",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root0\\2\\gen_py\\3.9\\dicts.dat",
+        "OriginalRoot":  "C:\\Users\\labuser\\AppData\\Local\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052002)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785918922213)\/",
+        "LengthBytes":  10
+    },
+    {
+        "SourcePath":  "C:\\Users\\labuser\\AppData\\Local\\Temp\\2\\gen_py\\3.9\\__init__.py",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root0\\2\\gen_py\\3.9\\__init__.py",
+        "OriginalRoot":  "C:\\Users\\labuser\\AppData\\Local\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052034)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785918922212)\/",
+        "LengthBytes":  176
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\bb3a785178f443fda931098a5a9a306b.db.ses",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\bb3a785178f443fda931098a5a9a306b.db.ses",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052066)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785743858246)\/",
+        "LengthBytes":  53
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\MpCmdRun.log",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\MpCmdRun.log",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052066)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785745415746)\/",
+        "LengthBytes":  7448
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\MpSigStub.log",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\MpSigStub.log",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052081)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785919039011)\/",
+        "LengthBytes":  304550
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\silconfig.log",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\silconfig.log",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052093)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785927166539)\/",
+        "LengthBytes":  102
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\_env.cmd",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\_env.cmd",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052097)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785743808885)\/",
+        "LengthBytes":  1175
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\activitywatch\\0.13.2\\activitywatch-v0.13.2-windows-x86_64.zip",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\activitywatch\\0.13.2\\activitywatch-v0.13.2-windows-x86_64.zip",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052097)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785743613375)\/",
+        "LengthBytes":  115013156
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\chocolatey.nuspec",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\chocolatey.nuspec",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052113)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  3820
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\chocolatey.zip",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\chocolatey.zip",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052113)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785743573824)\/",
+        "LengthBytes":  4446219
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\[Content_Types].xml",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\[Content_Types].xml",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052125)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  932
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\package\\services\\metadata\\core-properties\\5ad4dc75cc79452d8e7e738cb4a3286e.psmdcp",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\package\\services\\metadata\\core-properties\\5ad4dc75cc79452d8e7e738cb4a3286e.psmdcp",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052129)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  3495
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052129)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  15846
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateysetup.psm1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateysetup.psm1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052145)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  46947
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\init.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\init.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052145)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  14383
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\VERIFICATION.txt",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\VERIFICATION.txt",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052156)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  1145
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\choco.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\choco.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052161)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  7613568
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\choco.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\choco.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052161)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  0
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\choco.exe.manifest",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\choco.exe.manifest",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052176)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  3106
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\CREDITS.txt",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\CREDITS.txt",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052176)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  46954
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\LICENSE.txt",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\LICENSE.txt",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052192)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  670
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\chocolateyInstaller.psm1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\chocolateyInstaller.psm1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052192)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  16849
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\chocolateyProfile.psm1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\chocolateyProfile.psm1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052192)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  14124
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\chocolateyScriptRunner.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\chocolateyScriptRunner.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052208)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  16403
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\ChocolateyTabExpansion.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\ChocolateyTabExpansion.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052219)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  26408
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Format-FileSize.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Format-FileSize.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052224)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  14697
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-CheckSumValid.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-CheckSumValid.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052224)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  24450
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-ChocolateyPath.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-ChocolateyPath.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052240)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  15636
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-ChocolateyUnzip.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-ChocolateyUnzip.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052240)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  23935
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-ChocolateyWebFile.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-ChocolateyWebFile.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052256)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  29453
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-EnvironmentVariable.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-EnvironmentVariable.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052303)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  17069
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-EnvironmentVariableNames.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-EnvironmentVariableNames.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052312)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  15006
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-FtpFile.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-FtpFile.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052319)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  20892
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-OSArchitectureWidth.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-OSArchitectureWidth.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052319)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  15877
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-PackageParameters.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-PackageParameters.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052335)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  20205
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-ToolsLocation.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-ToolsLocation.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052343)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  16707
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-UACEnabled.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-UACEnabled.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052351)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  14837
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-UninstallRegistryKey.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-UninstallRegistryKey.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052351)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  18977
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-VirusCheckValid.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-VirusCheckValid.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052366)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  14761
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-WebFile.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-WebFile.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052375)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  25773
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-WebFileName.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-WebFileName.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052375)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  22193
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-WebHeaders.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Get-WebHeaders.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052382)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  18851
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-BinFile.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-BinFile.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052382)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  19229
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyEnvironmentVariable.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyEnvironmentVariable.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052382)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  17239
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyExplorerMenuItem.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyExplorerMenuItem.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052398)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  17495
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyFileAssociation.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyFileAssociation.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052406)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  16026
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyInstallPackage.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyInstallPackage.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052414)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  27327
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyPackage.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyPackage.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052414)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  30119
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyPath.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyPath.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052414)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  17287
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyPinnedTaskBarItem.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyPinnedTaskBarItem.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052430)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  15602
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyPowershellCommand.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyPowershellCommand.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052437)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  22265
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyShortcut.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyShortcut.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052437)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  20857
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyVsixPackage.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyVsixPackage.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052446)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  21951
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyZipPackage.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-ChocolateyZipPackage.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052446)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  23097
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-Vsix.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Install-Vsix.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052446)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  15124
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Set-EnvironmentVariable.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Set-EnvironmentVariable.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052461)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  17409
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Set-PowerShellExitCode.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Set-PowerShellExitCode.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052461)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  14657
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Start-ChocolateyProcessAsAdmin.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Start-ChocolateyProcessAsAdmin.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052468)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  29009
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Test-ProcessAdminRights.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Test-ProcessAdminRights.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052477)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  14859
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Uninstall-BinFile.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Uninstall-BinFile.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052477)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  16629
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Uninstall-ChocolateyEnvironmentVariable.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Uninstall-ChocolateyEnvironmentVariable.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052493)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  16077
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Uninstall-ChocolateyPackage.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Uninstall-ChocolateyPackage.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052500)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  19009
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\UnInstall-ChocolateyZipPackage.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\UnInstall-ChocolateyZipPackage.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052500)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  15842
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Update-SessionEnvironment.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Update-SessionEnvironment.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052521)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  16558
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Write-FunctionCallLogMessage.ps1",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\helpers\\functions\\Write-FunctionCallLogMessage.ps1",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052539)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716010000)\/",
+        "LengthBytes":  14920
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\choco.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\choco.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052559)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  146048
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\choco.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\choco.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052579)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  2
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\chocolatey.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\chocolatey.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052587)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  146560
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\chocolatey.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\chocolatey.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052605)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  2
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cinst.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cinst.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052612)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  146560
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cinst.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cinst.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052617)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  2
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\clist.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\clist.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052622)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  146560
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\clist.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\clist.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052628)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  2
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cpush.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cpush.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052634)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  146560
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cpush.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cpush.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052639)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  2
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cuninst.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cuninst.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052643)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  146560
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cuninst.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cuninst.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052649)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  2
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cup.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cup.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052653)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  146560
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cup.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\cup.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052659)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  2
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\RefreshEnv.cmd",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\redirects\\RefreshEnv.cmd",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052663)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  2340
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.dll",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.dll",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052668)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  1167872
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.dll.manifest",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.dll.manifest",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052673)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  513
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052678)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  331776
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052684)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  0
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.exe.manifest",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7z.exe.manifest",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052698)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  513
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7zip.license.txt",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\7zip.license.txt",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052704)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  1927
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\checksum.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\checksum.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052709)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  38528
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\checksum.exe.config",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\checksum.exe.config",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052714)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  150
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\checksum.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\checksum.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052718)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  0
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\checksum.license.txt",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\checksum.license.txt",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052727)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  95
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\shimgen.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\shimgen.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052732)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  568448
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\shimgen.exe.ignore",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\shimgen.exe.ignore",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052736)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  0
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\shimgen.license.txt",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\tools\\chocolateyInstall\\tools\\shimgen.license.txt",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052741)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  3758
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\chocoInstall\\_rels\\.rels",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\chocoInstall\\_rels\\.rels",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052745)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1683716012000)\/",
+        "LengthBytes":  495
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\vscode.install\\1.131.0\\install.log",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\vscode.install\\1.131.0\\install.log",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052751)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785743805948)\/",
+        "LengthBytes":  1113900
+    },
+    {
+        "SourcePath":  "C:\\Windows\\Temp\\chocolatey\\vscode.install\\1.131.0\\VSCodeSetup-x64-1.131.0.exe",
+        "BackupPath":  "C:\\Users\\labuser\\Documents\\training\\Day3\\TempCleanupLogs\\State\\20260805_114051907\\Quarantine\\Root1\\chocolatey\\vscode.install\\1.131.0\\VSCodeSetup-x64-1.131.0.exe",
+        "OriginalRoot":  "C:\\Windows\\Temp",
+        "DeletedOn":  {
+                          "value":  "\/Date(1785930052767)\/",
+                          "DisplayHint":  2,
+                          "DateTime":  "Wednesday, August 5, 2026 11:40:52 AM"
+                      },
+        "LastWriteTime":  "\/Date(1785743723463)\/",
+        "LengthBytes":  232347688
+    }
+]

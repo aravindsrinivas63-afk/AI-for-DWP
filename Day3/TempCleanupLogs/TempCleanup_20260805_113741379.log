@@ -1,0 +1,113 @@
+2026-08-05 11:37:41.379 [INFO] Temp file cleanup script started.
+2026-08-05 11:37:41.394 [INFO] Mode: DryRun
+2026-08-05 11:37:41.394 [INFO] DaysOld cutoff: 0
+2026-08-05 11:37:41.394 [INFO] Target paths: C:\Users\labuser\AppData\Local\Temp, C:\Windows\Temp
+2026-08-05 11:37:41.394 [INFO] Log file: C:\Users\labuser\Documents\training\Day3\TempCleanupLogs\TempCleanup_20260805_113741379.log
+2026-08-05 11:37:41.410 [INFO] Scanning path: C:\Users\labuser\AppData\Local\Temp
+2026-08-05 11:37:41.474 [INFO] [DRY-RUN] Would delete: C:\Users\labuser\AppData\Local\Temp\2\9f173971-9d5f-4d28-9cca-ab736e6a8032.tmp
+2026-08-05 11:37:41.474 [INFO] [DRY-RUN] Would delete: C:\Users\labuser\AppData\Local\Temp\2\exthost-75b90d.cpuprofile
+2026-08-05 11:37:41.474 [INFO] [DRY-RUN] Would delete: C:\Users\labuser\AppData\Local\Temp\2\f96a9679-b084-4717-a8c4-0a7632915fa2.tmp
+2026-08-05 11:37:41.474 [INFO] [DRY-RUN] Would delete: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\dicts.dat
+2026-08-05 11:37:41.489 [INFO] [DRY-RUN] Would delete: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\__init__.py
+2026-08-05 11:37:41.489 [INFO] Scanning path: C:\Windows\Temp
+2026-08-05 11:37:41.528 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\bb3a785178f443fda931098a5a9a306b.db.ses
+2026-08-05 11:37:41.537 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\MpCmdRun.log
+2026-08-05 11:37:41.537 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\MpSigStub.log
+2026-08-05 11:37:41.537 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\silconfig.log
+2026-08-05 11:37:41.537 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\_env.cmd
+2026-08-05 11:37:41.537 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\activitywatch\0.13.2\activitywatch-v0.13.2-windows-x86_64.zip
+2026-08-05 11:37:41.553 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\chocolatey.nuspec
+2026-08-05 11:37:41.553 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\chocolatey.zip
+2026-08-05 11:37:41.559 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\[Content_Types].xml
+2026-08-05 11:37:41.559 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\package\services\metadata\core-properties\5ad4dc75cc79452d8e7e738cb4a3286e.psmdcp
+2026-08-05 11:37:41.559 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall.ps1
+2026-08-05 11:37:41.584 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateysetup.psm1
+2026-08-05 11:37:41.590 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\init.ps1
+2026-08-05 11:37:41.590 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\VERIFICATION.txt
+2026-08-05 11:37:41.600 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\choco.exe
+2026-08-05 11:37:41.600 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\choco.exe.ignore
+2026-08-05 11:37:41.616 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\choco.exe.manifest
+2026-08-05 11:37:41.616 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\CREDITS.txt
+2026-08-05 11:37:41.632 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\LICENSE.txt
+2026-08-05 11:37:41.632 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\chocolateyInstaller.psm1
+2026-08-05 11:37:41.653 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\chocolateyProfile.psm1
+2026-08-05 11:37:41.664 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\chocolateyScriptRunner.ps1
+2026-08-05 11:37:41.664 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\ChocolateyTabExpansion.ps1
+2026-08-05 11:37:41.679 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Format-FileSize.ps1
+2026-08-05 11:37:41.684 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-CheckSumValid.ps1
+2026-08-05 11:37:41.684 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-ChocolateyPath.ps1
+2026-08-05 11:37:41.684 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-ChocolateyUnzip.ps1
+2026-08-05 11:37:41.695 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-ChocolateyWebFile.ps1
+2026-08-05 11:37:41.695 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-EnvironmentVariable.ps1
+2026-08-05 11:37:41.711 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-EnvironmentVariableNames.ps1
+2026-08-05 11:37:41.716 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-FtpFile.ps1
+2026-08-05 11:37:41.716 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-OSArchitectureWidth.ps1
+2026-08-05 11:37:41.716 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-PackageParameters.ps1
+2026-08-05 11:37:41.727 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-ToolsLocation.ps1
+2026-08-05 11:37:41.743 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-UACEnabled.ps1
+2026-08-05 11:37:41.747 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-UninstallRegistryKey.ps1
+2026-08-05 11:37:41.747 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-VirusCheckValid.ps1
+2026-08-05 11:37:41.747 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-WebFile.ps1
+2026-08-05 11:37:41.759 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-WebFileName.ps1
+2026-08-05 11:37:41.759 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-WebHeaders.ps1
+2026-08-05 11:37:41.759 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-BinFile.ps1
+2026-08-05 11:37:41.774 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyEnvironmentVariable.ps1
+2026-08-05 11:37:41.774 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyExplorerMenuItem.ps1
+2026-08-05 11:37:41.778 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyFileAssociation.ps1
+2026-08-05 11:37:41.778 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyInstallPackage.ps1
+2026-08-05 11:37:41.778 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyPackage.ps1
+2026-08-05 11:37:41.778 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyPath.ps1
+2026-08-05 11:37:41.790 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyPinnedTaskBarItem.ps1
+2026-08-05 11:37:41.790 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyPowershellCommand.ps1
+2026-08-05 11:37:41.790 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyShortcut.ps1
+2026-08-05 11:37:41.790 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyVsixPackage.ps1
+2026-08-05 11:37:41.806 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyZipPackage.ps1
+2026-08-05 11:37:41.810 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-Vsix.ps1
+2026-08-05 11:37:41.810 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Set-EnvironmentVariable.ps1
+2026-08-05 11:37:41.810 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Set-PowerShellExitCode.ps1
+2026-08-05 11:37:41.822 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Start-ChocolateyProcessAsAdmin.ps1
+2026-08-05 11:37:41.822 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Test-ProcessAdminRights.ps1
+2026-08-05 11:37:41.822 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Uninstall-BinFile.ps1
+2026-08-05 11:37:41.822 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Uninstall-ChocolateyEnvironmentVariable.ps1
+2026-08-05 11:37:41.822 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Uninstall-ChocolateyPackage.ps1
+2026-08-05 11:37:41.822 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\UnInstall-ChocolateyZipPackage.ps1
+2026-08-05 11:37:41.838 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Update-SessionEnvironment.ps1
+2026-08-05 11:37:41.841 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Write-FunctionCallLogMessage.ps1
+2026-08-05 11:37:41.841 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\choco.exe
+2026-08-05 11:37:41.841 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\choco.exe.ignore
+2026-08-05 11:37:41.854 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\chocolatey.exe
+2026-08-05 11:37:41.854 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\chocolatey.exe.ignore
+2026-08-05 11:37:41.854 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cinst.exe
+2026-08-05 11:37:41.854 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cinst.exe.ignore
+2026-08-05 11:37:41.854 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\clist.exe
+2026-08-05 11:37:41.854 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\clist.exe.ignore
+2026-08-05 11:37:41.869 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cpush.exe
+2026-08-05 11:37:41.872 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cpush.exe.ignore
+2026-08-05 11:37:41.872 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cuninst.exe
+2026-08-05 11:37:41.872 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cuninst.exe.ignore
+2026-08-05 11:37:41.872 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cup.exe
+2026-08-05 11:37:41.885 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cup.exe.ignore
+2026-08-05 11:37:41.885 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\RefreshEnv.cmd
+2026-08-05 11:37:41.885 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.dll
+2026-08-05 11:37:41.885 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.dll.manifest
+2026-08-05 11:37:41.885 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.exe
+2026-08-05 11:37:41.885 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.exe.ignore
+2026-08-05 11:37:41.885 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.exe.manifest
+2026-08-05 11:37:41.903 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7zip.license.txt
+2026-08-05 11:37:41.903 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\checksum.exe
+2026-08-05 11:37:41.903 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\checksum.exe.config
+2026-08-05 11:37:41.903 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\checksum.exe.ignore
+2026-08-05 11:37:41.903 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\checksum.license.txt
+2026-08-05 11:37:41.903 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\shimgen.exe
+2026-08-05 11:37:41.917 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\shimgen.exe.ignore
+2026-08-05 11:37:41.917 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\shimgen.license.txt
+2026-08-05 11:37:41.917 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\chocoInstall\_rels\.rels
+2026-08-05 11:37:41.917 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\vscode.install\1.131.0\install.log
+2026-08-05 11:37:41.917 [INFO] [DRY-RUN] Would delete: C:\Windows\Temp\chocolatey\vscode.install\1.131.0\VSCodeSetup-x64-1.131.0.exe
+2026-08-05 11:37:41.917 [INFO] Cleanup run complete.
+2026-08-05 11:37:41.934 [INFO] Scanned items: 99
+2026-08-05 11:37:41.934 [INFO] Eligible items: 99
+2026-08-05 11:37:41.934 [INFO] Files deleted or restored: 0
+2026-08-05 11:37:41.934 [INFO] Locked or in-use items skipped: 0
+2026-08-05 11:37:41.949 [INFO] Missing or unavailable items skipped: 0
+2026-08-05 11:37:41.949 [INFO] Errors: 0

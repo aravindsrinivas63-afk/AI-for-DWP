@@ -1,0 +1,114 @@
+2026-08-05 11:40:51.907 [INFO] Temp file cleanup script started.
+2026-08-05 11:40:51.923 [INFO] Mode: Cleanup
+2026-08-05 11:40:51.923 [INFO] DaysOld cutoff: 0
+2026-08-05 11:40:51.923 [INFO] Target paths: C:\Users\labuser\AppData\Local\Temp, C:\Windows\Temp
+2026-08-05 11:40:51.923 [INFO] Log file: C:\Users\labuser\Documents\training\Day3\TempCleanupLogs\TempCleanup_20260805_114051907.log
+2026-08-05 11:40:51.923 [INFO] Scanning path: C:\Users\labuser\AppData\Local\Temp
+2026-08-05 11:40:51.971 [WARN] Skipped locked or in-use file: C:\Users\labuser\AppData\Local\Temp\2\9f173971-9d5f-4d28-9cca-ab736e6a8032.tmp
+2026-08-05 11:40:51.986 [SUCCESS] Moved to quarantine: C:\Users\labuser\AppData\Local\Temp\2\exthost-75b90d.cpuprofile
+2026-08-05 11:40:52.000 [SUCCESS] Moved to quarantine: C:\Users\labuser\AppData\Local\Temp\2\f96a9679-b084-4717-a8c4-0a7632915fa2.tmp
+2026-08-05 11:40:52.002 [SUCCESS] Moved to quarantine: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\dicts.dat
+2026-08-05 11:40:52.034 [SUCCESS] Moved to quarantine: C:\Users\labuser\AppData\Local\Temp\2\gen_py\3.9\__init__.py
+2026-08-05 11:40:52.034 [INFO] Scanning path: C:\Windows\Temp
+2026-08-05 11:40:52.066 [SUCCESS] Moved to quarantine: C:\Windows\Temp\bb3a785178f443fda931098a5a9a306b.db.ses
+2026-08-05 11:40:52.066 [SUCCESS] Moved to quarantine: C:\Windows\Temp\MpCmdRun.log
+2026-08-05 11:40:52.081 [SUCCESS] Moved to quarantine: C:\Windows\Temp\MpSigStub.log
+2026-08-05 11:40:52.093 [SUCCESS] Moved to quarantine: C:\Windows\Temp\silconfig.log
+2026-08-05 11:40:52.097 [SUCCESS] Moved to quarantine: C:\Windows\Temp\_env.cmd
+2026-08-05 11:40:52.097 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\activitywatch\0.13.2\activitywatch-v0.13.2-windows-x86_64.zip
+2026-08-05 11:40:52.113 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\chocolatey.nuspec
+2026-08-05 11:40:52.113 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\chocolatey.zip
+2026-08-05 11:40:52.125 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\[Content_Types].xml
+2026-08-05 11:40:52.129 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\package\services\metadata\core-properties\5ad4dc75cc79452d8e7e738cb4a3286e.psmdcp
+2026-08-05 11:40:52.129 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall.ps1
+2026-08-05 11:40:52.145 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateysetup.psm1
+2026-08-05 11:40:52.145 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\init.ps1
+2026-08-05 11:40:52.156 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\VERIFICATION.txt
+2026-08-05 11:40:52.161 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\choco.exe
+2026-08-05 11:40:52.176 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\choco.exe.ignore
+2026-08-05 11:40:52.176 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\choco.exe.manifest
+2026-08-05 11:40:52.187 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\CREDITS.txt
+2026-08-05 11:40:52.192 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\LICENSE.txt
+2026-08-05 11:40:52.192 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\chocolateyInstaller.psm1
+2026-08-05 11:40:52.208 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\chocolateyProfile.psm1
+2026-08-05 11:40:52.208 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\chocolateyScriptRunner.ps1
+2026-08-05 11:40:52.219 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\ChocolateyTabExpansion.ps1
+2026-08-05 11:40:52.224 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Format-FileSize.ps1
+2026-08-05 11:40:52.224 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-CheckSumValid.ps1
+2026-08-05 11:40:52.240 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-ChocolateyPath.ps1
+2026-08-05 11:40:52.240 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-ChocolateyUnzip.ps1
+2026-08-05 11:40:52.256 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-ChocolateyWebFile.ps1
+2026-08-05 11:40:52.303 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-EnvironmentVariable.ps1
+2026-08-05 11:40:52.312 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-EnvironmentVariableNames.ps1
+2026-08-05 11:40:52.319 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-FtpFile.ps1
+2026-08-05 11:40:52.319 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-OSArchitectureWidth.ps1
+2026-08-05 11:40:52.335 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-PackageParameters.ps1
+2026-08-05 11:40:52.343 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-ToolsLocation.ps1
+2026-08-05 11:40:52.351 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-UACEnabled.ps1
+2026-08-05 11:40:52.351 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-UninstallRegistryKey.ps1
+2026-08-05 11:40:52.366 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-VirusCheckValid.ps1
+2026-08-05 11:40:52.375 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-WebFile.ps1
+2026-08-05 11:40:52.375 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-WebFileName.ps1
+2026-08-05 11:40:52.382 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Get-WebHeaders.ps1
+2026-08-05 11:40:52.382 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-BinFile.ps1
+2026-08-05 11:40:52.382 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyEnvironmentVariable.ps1
+2026-08-05 11:40:52.398 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyExplorerMenuItem.ps1
+2026-08-05 11:40:52.406 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyFileAssociation.ps1
+2026-08-05 11:40:52.414 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyInstallPackage.ps1
+2026-08-05 11:40:52.414 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyPackage.ps1
+2026-08-05 11:40:52.414 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyPath.ps1
+2026-08-05 11:40:52.430 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyPinnedTaskBarItem.ps1
+2026-08-05 11:40:52.437 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyPowershellCommand.ps1
+2026-08-05 11:40:52.437 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyShortcut.ps1
+2026-08-05 11:40:52.446 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyVsixPackage.ps1
+2026-08-05 11:40:52.446 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-ChocolateyZipPackage.ps1
+2026-08-05 11:40:52.446 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Install-Vsix.ps1
+2026-08-05 11:40:52.461 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Set-EnvironmentVariable.ps1
+2026-08-05 11:40:52.461 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Set-PowerShellExitCode.ps1
+2026-08-05 11:40:52.468 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Start-ChocolateyProcessAsAdmin.ps1
+2026-08-05 11:40:52.477 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Test-ProcessAdminRights.ps1
+2026-08-05 11:40:52.477 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Uninstall-BinFile.ps1
+2026-08-05 11:40:52.493 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Uninstall-ChocolateyEnvironmentVariable.ps1
+2026-08-05 11:40:52.500 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Uninstall-ChocolateyPackage.ps1
+2026-08-05 11:40:52.500 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\UnInstall-ChocolateyZipPackage.ps1
+2026-08-05 11:40:52.522 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Update-SessionEnvironment.ps1
+2026-08-05 11:40:52.539 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\helpers\functions\Write-FunctionCallLogMessage.ps1
+2026-08-05 11:40:52.560 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\choco.exe
+2026-08-05 11:40:52.579 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\choco.exe.ignore
+2026-08-05 11:40:52.587 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\chocolatey.exe
+2026-08-05 11:40:52.606 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\chocolatey.exe.ignore
+2026-08-05 11:40:52.613 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cinst.exe
+2026-08-05 11:40:52.618 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cinst.exe.ignore
+2026-08-05 11:40:52.622 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\clist.exe
+2026-08-05 11:40:52.629 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\clist.exe.ignore
+2026-08-05 11:40:52.635 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cpush.exe
+2026-08-05 11:40:52.640 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cpush.exe.ignore
+2026-08-05 11:40:52.644 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cuninst.exe
+2026-08-05 11:40:52.649 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cuninst.exe.ignore
+2026-08-05 11:40:52.654 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cup.exe
+2026-08-05 11:40:52.659 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\cup.exe.ignore
+2026-08-05 11:40:52.664 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\redirects\RefreshEnv.cmd
+2026-08-05 11:40:52.669 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.dll
+2026-08-05 11:40:52.673 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.dll.manifest
+2026-08-05 11:40:52.679 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.exe
+2026-08-05 11:40:52.684 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.exe.ignore
+2026-08-05 11:40:52.699 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7z.exe.manifest
+2026-08-05 11:40:52.705 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\7zip.license.txt
+2026-08-05 11:40:52.709 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\checksum.exe
+2026-08-05 11:40:52.714 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\checksum.exe.config
+2026-08-05 11:40:52.721 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\checksum.exe.ignore
+2026-08-05 11:40:52.727 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\checksum.license.txt
+2026-08-05 11:40:52.732 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\shimgen.exe
+2026-08-05 11:40:52.737 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\shimgen.exe.ignore
+2026-08-05 11:40:52.741 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\tools\chocolateyInstall\tools\shimgen.license.txt
+2026-08-05 11:40:52.746 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\chocoInstall\_rels\.rels
+2026-08-05 11:40:52.751 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\vscode.install\1.131.0\install.log
+2026-08-05 11:40:52.767 [SUCCESS] Moved to quarantine: C:\Windows\Temp\chocolatey\vscode.install\1.131.0\VSCodeSetup-x64-1.131.0.exe
+2026-08-05 11:40:52.878 [INFO] Rollback manifest written to: C:\Users\labuser\Documents\training\Day3\TempCleanupLogs\State\20260805_114051907\rollback-manifest.json
+2026-08-05 11:40:52.893 [INFO] Cleanup run complete.
+2026-08-05 11:40:52.893 [INFO] Scanned items: 99
+2026-08-05 11:40:52.893 [INFO] Eligible items: 99
+2026-08-05 11:40:52.893 [INFO] Files deleted or restored: 98
+2026-08-05 11:40:52.893 [INFO] Locked or in-use items skipped: 1
+2026-08-05 11:40:52.909 [INFO] Missing or unavailable items skipped: 0
+2026-08-05 11:40:52.909 [INFO] Errors: 0
