@@ -1,0 +1,1683 @@
+Welcome to AI for DWP training !!!
+===
+
+Welcome to AI for DWP Training
+---
+Lab -- start -- wait untill it comes to running --- connect
+
+Open vscode
+---
+desktop -- vscode
+
+
+Open github
+---
+edge browser -- https://github.com/
+
+submit the first prompt in github web
+---
+github.com -- ask mode -- auto mode
+
+"You are a DWP service-desk analyst. Covert the raw end-user issue below into a structured triage summary with these headings: summary (one line), Impact (who/how many/ business urgency), Know facts, Missing Information to gather, Likely catagory, suggest first diagnostic step. Do not invent facts that are not present. Mark anything uncertain as 'to confirm'.
+
+Raw issue: "laptop really slow since this morning cant open outlook it just spins, other apps ok i think, its the new win11 machine from last week
+
+retry the same prompt with different model
+---
+new chat -- same prompt -- model (selecte different)
+
+Create a workspace
+---
+open folder -- my documents -- new folder(name it as Training) -- select folder
+
+Create a charcter MD file on agent mode
+---
+Help me draft a one-page personal AI usage charter for a DWP engineer using public AI assistants. It must cover: (1) DWP tasks that are appropriate for public LLM help, (2) tasks that are not, (3) a data-handling rule for end-user PII and credentials, (4) a personal 'generate then verify' rule for scripts and system changes. Keep it to one page, practical and specific to desktop/endpoint work.
+
+review it and ask it to save as document
+---
+generate it as document so that i can use this as context for later chats
+
+issues
+---
+Issue A: "laptop really slow since this morning cant open outlook it just spins, other apps ok i think, its the new win11 machine from last week"
+Issue B: "cant get on the vdi thing today keeps saying cannot connect. worked friday. im at home on wifi"
+Issue C: "printer gone. the big one on 3rd floor. whole team affected. we have a client meeting at 2"
+
+Day 2
+====
+
+Create a folder called day1
+---
+vscode -- training -- new folder -- day1
+
+Create triage summay for all 3 issues with the charter file as context
+---
+@file:personal-ai-usage-charter.md You are a DWP service desk analyst. Convert the raw end-user issue below into a strctured triage summary with these heading: Summary (one line), Impact (who/how many/ business urgency), known facts, Missing information to gather, likely catagory, Suggest first diagnostic step. Do not invent facts that are not present. Mark anything uncertain as 'to confirm'.  save this as a file in day1 directory
+raw issue: "laptop really slow since this morning cant open outlook it just spins, other apps ok i think, its the new win11 machine from last week"
+
+keep the file
+
+Reapeat the same for other 2 issues in new chats
+---
+@file:personal-ai-usage-charter.md You are a DWP service desk analyst. Convert the raw end-user issue below into a strctured triage summary with these heading: Summary (one line), Impact (who/how many/ business urgency), known facts, Missing information to gather, likely catagory, Suggest first diagnostic step. Do not invent facts that are not present. Mark anything uncertain as 'to confirm'.  save this as a file in day1 directory
+raw issue: "cant get on the vdi thing today keeps saying cannot connect. worked friday. im at home on wifi"
+
+@file:personal-ai-usage-charter.md You are a DWP service desk analyst. Convert the raw end-user issue below into a strctured triage summary with these heading: Summary (one line), Impact (who/how many/ business urgency), known facts, Missing information to gather, likely catagory, Suggest first diagnostic step. Do not invent facts that are not present. Mark anything uncertain as 'to confirm'.  save this as a file in day1 directory
+raw issue: "printer gone. the big one on 3rd floor. whole team affected. we have a client meeting at 2"
+
+
+Create a folder called day2
+---
+vscode -- training -- new folder -- day2
+
+Give a WEAK PROMPT
+===
+"my laptop is slow what do i do"
+
+Same issue STRONG PROMPT
+===
+"You are a DWP analyst. A user 
+rts a slow Win11 laptop. Give: likely causes, 3 questions to ask, first diagnostic step."
+
+→ structured, usable
+
+Ticket Bank
+---
+-1001  New Win11 laptop, BitLocker prompting for recovery key every boot.
+T-1002  Finance user cannot open a shared mailbox after migration.
+T-1003  AVD session disconnects after ~10 min, then reconnects.
+T-1004  Company app fails to install from Company Portal, error 0x87D1041C.
+T-1005  Teams audio dead on three machines in the same meeting room.
+T-1006  'Everything is slow' — user upgraded to Win11 two days ago.
+T-1007  OneDrive stuck 'processing changes' since migration; files missing locally.
+T-1008  VPN connects but no internal resources reachable after Win11 upgrade.
+
+reusable prompt for first ticket
+---
+@file:personal-ai-usage-charter.md You are a DWP service desk analyst. For the ticket below, produce: Summary (one line), Impact (who/how many/ business urgency), known facts, Missing information to gather, likely catagory, First diagnostic step. Do not invent error codes, registry keys, or KB numbers. Mark uncertain items 'to-verify'.Save this as a file in day2 directory
+Ticket: "T-1001 New Win11 laptop, BitLocker prompting for recovery key every boot."
+
+IN the same chat ask it genrate the triage for all th tickets
+---
+repeat the same for below tickets "T-1002 Finance user cannot open a shared mailbox after migration.
+T-1003 AVD session disconnects after ~10 min, then reconnects.
+T-1004 Company app fails to install from Company Portal, error 0x87D1041C.
+T-1005 Teams audio dead on three machines in the same meeting room.
+T-1006 'Everything is slow' — user upgraded to Win11 two days ago.
+T-1007 OneDrive stuck 'processing changes' since migration; files missing locally.
+T-1008 VPN connects but no internal resources reachable after Win11 upgrade.
+"
+
+rerun the prompt without guardrail
+---
+file@f:personal-ai-usage-charter.md You are a DWP service desk analyst. For the ticket below, produce: Summary (one line), Impact (who/how many/ business urgency), known facts, Missing information to gather, likely catagory, first diagnostic step. First diagnostic step. Mark uncertain items 'to-verify'.
+
+Ticket: "Company app fails to install from Company Portal, error 0x87D1041C"
+
+
+cloure note prompt without examples
+---
+You are a DWP service-desk analyst. Write a closure note for the
+ticket below.
+
+Ticket: "AVD user couldn't connect; found their account was outside
+the assigned application group; added them; confirmed login."
+
+closure note with example
+---
+You are a DWP service-desk analyst Writing a closure note in a consistent house style. Study the two worked example below, then write the closure note for the new ticket in exactly the same structure and tone. Do not add commentary - return only the closure note.
+Example 1
+Raw ticket: "outlook wont open since the migration, keeps spinning, other stuff seems fine"
+Closure note: Resolved. Cause: stale Outlook profile after migration. Action: recreated profile, confirmed mail flow. Preventive: added to migration checklist. User confirmed working.
+
+Example 2
+Raw ticket: "cant access sharepoint or teams files, laptop is new"
+Closure note: Resolved. Cause: device had not checked in to Intune. Action: forced sync, policy applied, compliance green. User confirmed access.
+
+New ticket: "AVD user couldn't connect; found their account was outside the assigned application group; added them; confirmed login."
+
+Triage prompt with examples
+---
+You are a DWP service-desk analyst writing structured triage summaries in a consistent house style. Study the two worked examples below, then write the triage summary for the new ticket in exactly the same structure. Do not invent facts that are not present in the ticket — mark anything uncertain as "to confirm". Return only the triage summary.
+
+Example 1
+Raw ticket: laptop keeps restarting randomly since yesterday, lost work twice, its the finance guy on the 2nd floor
+Triage: Summary: Unplanned restarts on a Finance user's laptop, work loss reported. Impact: 1 user, data-loss risk, escalate priority. Known facts: started yesterday, 2 restarts, work lost both times. Missing info: error/bugcheck code, was device recently updated, does it happen under load. Likely category: hardware/driver or update-related instability. First step: check Event Viewer for Kernel-Power/BugCheck events.
+
+Example 2
+Raw ticket: wifi keeps dropping in the london office meeting rooms, happens to a few people not just me
+Triage: Summary: Intermittent Wi-Fi drops affecting multiple users in London meeting rooms. Impact: multiple users, moderate, meeting disruption. Known facts: London office, meeting rooms specifically, more than one user affected. Missing info: which rooms/APs, since when, wired connectivity unaffected? Likely category: Wi-Fi coverage or AP issue. First step: check AP logs/signal strength for the affected rooms.
+
+New ticket: cant print from the 3rd floor since this morning, whole team affected, big client meeting at 2
+Triage:
+
+Create a prompt-library.md
+---
+vscode -- new file -- prompt-library.md
+
+File content
+---
+# DWP Prompt Library — Triage & End-User Comms
+---
+
+## Template 1 - Triage Summary
+```
+You are a DWP service-desk analyst writing structured triage summaries in a consistent house style. Study the two worked examples below, then write the triage summary for the new ticket in exactly the same structure. Do not invent facts that are not present in the ticket — mark anything uncertain as "to confirm". Return only the triage summary.
+
+Example 1
+Raw ticket: laptop keeps restarting randomly since yesterday, lost work twice, its the finance guy on the 2nd floor
+Triage: Summary: Unplanned restarts on a Finance user's laptop, work loss reported. Impact: 1 user, data-loss risk, escalate priority. Known facts: started yesterday, 2 restarts, work lost both times. Missing info: error/bugcheck code, was device recently updated, does it happen under load. Likely category: hardware/driver or update-related instability. First step: check Event Viewer for Kernel-Power/BugCheck events.
+
+Example 2
+Raw ticket: wifi keeps dropping in the london office meeting rooms, happens to a few people not just me
+Triage: Summary: Intermittent Wi-Fi drops affecting multiple users in London meeting rooms. Impact: multiple users, moderate, meeting disruption. Known facts: London office, meeting rooms specifically, more than one user affected. Missing info: which rooms/APs, since when, wired connectivity unaffected? Likely category: Wi-Fi coverage or AP issue. First step: check AP logs/signal strength for the affected rooms.
+```
+---
+## Template 2 -  End-user comms
+
+```
+You are a DWP service-desk analyst who translates technical resolutions into calm, plain-language messages for non-technical end users. Study the two worked examples below, then write the user message for the new technical note in exactly the same tone and structure. No jargon. Under 120 words. Confirm the user's data/access is safe. State clearly what (if anything) they need to do. Return only the user message.
+
+Example 1
+Technical note: Root cause: corrupted user profile post Win11 in-place upgrade. Rebuilt profile, re-synced OneDrive KFM, re-applied Intune config.
+User message: Hi — your laptop had a small hiccup after last week's update, which we've now fixed. All your files are safe and nothing further is needed from you. Sorry for the disruption!
+
+Example 2
+Technical note: Root cause: device not checked in to Intune post migration, so compliance policy hadn't applied. Forced sync, policy applied, compliance now green.
+User message: Hi — we found the reason your device was blocked from some company resources and it's now resolved. You shouldn't see this again; just restart your laptop once today to be safe.
+
+```
+
+Prompt to use the template and providing ticket as input for triage creation
+---
+Refer @file:prompt-library.md which contains prompt templates with examples . using Triage summary prompt wtite a triage summary for the ticket "cant print from the 3rd floor since this morning, whole team affected, big client meeting at 2"
+
+Prompt to use the template and providing resolution as input for end user communication creation
+---
+Refere @file:prompt-library.md which contains prompt templates with examples . using End-User Comms prompt write a end user communication for "AVD user couldn't connect; found their account was outside the assigned application group; added them; confirmed login."
+
+Known-error records
+----
+Prompt template
+
+You are a DWP service-desk analyst writing structured known-error
+records for the knowledge base. Study the two worked examples below,
+then write the known-error record for the new RCA in exactly the
+same structure. Only use facts present in the RCA — mark anything
+uncertain as "to confirm". Return only the record.
+
+Example 1
+RCA: verified root-cause text
+Known-error record: structured record
+
+Example 2
+RCA: verified root-cause text
+Known-error record: structured record
+
+New RCA: paste new RCA
+Known-error record:
+
+Worked example (fill-in reference)
+
+Example 1
+RCA: "AVD black screens traced to a graphics driver regression in the
+overnight host-pool image update; affected ~40% of one pool."
+Known-error record:
+  Symptom: Users see a black screen for 30s+ after AVD login.
+  Cause: Graphics driver regression in host image.
+  Scope: One host pool, image-update dependent.
+  Workaround: Move affected users to the healthy pool.
+  Permanent fix: Roll back/patch the image, re-test before redeploy.
+
+Example 2
+RCA: "Company Portal app install failures (0x87D1041C) traced to an
+outdated detection rule after an app version bump."
+Known-error record:
+  Symptom: App shows 'failed' in Company Portal, error 0x87D1041C.
+  Cause: Detection rule not updated for new app version.
+  Scope: All devices assigned the app after the version bump.
+  Workaround: Manually reinstall via IT; not user-fixable.
+  Permanent fix: Update detection rule to match new version, redeploy.
+
+Exact prompt to paste
+
+You are a DWP service-desk analyst writing structured known-error
+records for the knowledge base. Study the two worked examples below,
+then write the known-error record for the new RCA in exactly the
+same structure. Only use facts present in the RCA — mark anything
+uncertain as "to confirm". Return only the record.
+
+Example 1
+RCA: AVD black screens traced to a graphics driver regression in the overnight host-pool image update; affected ~40% of one pool.
+Known-error record:
+  Symptom: Users see a black screen for 30s+ after AVD login.
+  Cause: Graphics driver regression in host image.
+  Scope: One host pool, image-update dependent.
+  Workaround: Move affected users to the healthy pool.
+  Permanent fix: Roll back/patch the image, re-test before redeploy.
+
+Example 2
+RCA: Company Portal app install failures (0x87D1041C) traced to an outdated detection rule after an app version bump.
+Known-error record:
+  Symptom: App shows 'failed' in Company Portal, error 0x87D1041C.
+  Cause: Detection rule not updated for new app version.
+  Scope: All devices assigned the app after the version bump.
+  Workaround: Manually reinstall via IT; not user-fixable.
+  Permanent fix: Update detection rule to match new version, redeploy.
+
+New RCA: Printer mapping lost for the whole 3rd floor after Win11 upgrade; logon script wasn't re-applied because it referenced the old OS drive path.
+Known-error record:
+
+Expected output
+
+Symptom: Printer mapping missing for 3rd floor users after Win11 upgrade.
+Cause: Logon script not re-applied — script referenced old OS drive path.
+Scope: All 3rd floor devices upgraded to Win11.
+Workaround: Manually re-map printers via IT until script is fixed.
+Permanent fix: Update logon script to use the correct Win11 drive path, re-test on a pilot device before wider rollout.
+
+
+Rewrite technical fix for different audiance
+---
+
+
+Engineer note:You are a DWP service-desk analyst. Take the technical resolution
+below and rewrite it for THREE different audiences. Each version must
+carry exactly the same facts — do not add or remove information.
+
+Audience 1 — Non-technical executive
+- No jargon whatsoever
+- Under 80 words
+- Lead with reassurance (their access and data are safe)
+- End with what they need to do, if anything
+- Tone: calm, professional, brief
+
+Audience 2 — Affected end-user team (10 people, non-technical)
+- Plain language, friendly tone
+- Under 100 words
+- Explain what happened in one sentence without jargon
+- Tell them what to do if they see the same issue
+- End with who to contact
+
+Audience 3 — Engineer-to-engineer internal note
+- Technical shorthand is fine
+- Include: root cause, exact action taken, config detail,
+  verification step, and the preventive action needed
+- No length limit — include everything a colleague needs to
+  pick this up if it recurs
+
+Technical resolution:
+Root cause: Win11 upgrade removed the legacy VPN client and did not
+trigger the Intune re-deployment of the new client due to a
+detection-rule gap. Manually removed stale VPN registry entries under
+HKLM\SOFTWARE\<vendor>, force-triggered Intune sync, new client
+deployed, split-tunnel config applied, connectivity confirmed to all
+internal subnets. No data loss.
+
+Return all three versions clearly labelled:
+Executive:
+Team:
+
+Follow up prompt to save them as file
+---
+save it as 3 different files under day 2 folder
+
+day 3
+====
+
+Chained prompt -- output becomes the input
+---
+You are a DWP service-desk analyst writing structured triage summaries. For the ticket below produce: Summary; Impact; Known facts; Missing info to gather; Likely category; First diagnostic step. Do not invent facts — mark anything uncertain as "to confirm". Return only the triage summary.
+
+Ticket: After Win11 migration, a Finance user's mapped drives (S:and P:) are missing every morning and must be remapped by hand. Logon script exists but seems not to run reliably post-upgrade.
+
+
+Prompt 2 -- ranked list
+---
+"Based on the triage summary you just produced, give a ranked list of likely fixes for the missing mapped drives, most probable first 
+for each fix give:
+- why it is likely, given what we know
+- The specific check to confirm it is the right fix
+-  action to take if confirmed
+Do not write scripts yet. matk anything uncertain as "to confirm"
+
+prompt 3 -- closure note
+----
+The issue is now resolved. fix 1 .Ensure mapping runs only after network is ready at sign-in worked we modified the policy behavior to wait for network and processes. user confirmed working
+
+using the triage summary and fix steps as context, write a closure note in this structure: Resolved. Cause: {cause}. Action: {action taken}. Preventive: {preventive step}. User confirmed working.
+Return only the closure note.
+
+Prompt debugging
+---
+wrong prompt
+---
+fix the vpn issue
+
+correct prompt
+---
+You are a DWP service-desk analyst. A Finance user on Windows 11 reports their VPN connects successfully but no internal resources
+are reachable after a Win11 upgrade last week. The device is managed via Intune. Produce a structured triage summary with these
+sections: Summary; Impact; Known facts; Missing info to gather; likely category; First diagnostic step. Do not invent facts — mark
+anything uncertain as "to confirm". Return only the triage summary.
+
+wrong prompt
+---
+You are an expert. Write the best possible complete and thorough and detailed comprehensive answer about laptops.
+
+correct prompt
+---
+You are a DWP service-desk analyst. A user has just received a new Win11 laptop as part of the FinBridge migration and is calling to
+say it is running slowly. List the five most likely causes of poor performance on a newly deployed Win11 laptop in a managed
+environment, most probable first. For each cause give: the likely reason, and the single fastest check. No preamble — return only the
+numbered list.
+
+rewrite the below prompts
+---
+"write something for the user about their email"
+
+"you are a helpful assistant who always gives detailed, accurate,
+professional, well-structured, clear and concise answers. Tell me
+about Intune."
+
+"A user says their laptop is slow. What is the problem and fix it."
+
+"List every possible reason a Windows 11 device might have any
+kind of issue connecting to any kind of network resource."
+
+"Rewrite this so it sounds better:
+'Device non-compliant due to BitLocker not enabled. Remediation
+applied. Compliance restored.'"
+
+"You are a senior DWP engineer with 20 years experience. A user
+cannot log in. Solve this completely and give me the guaranteed fix.
+
+Create a new folder for day 3
+---
+vscode -- training - day 3
+
+check poweshell version
+---
+windows -- powershell
+
+$PSVersionTable.PSVersion 
+
+Set execution policy in powershell
+---
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+A
+
+validate the execution policy
+---
+Get-ExecutionPolicy -Scope Process
+
+Prompt to create a diagnostic script
+---
+you are a PowerShell Developer(version 5.1). write a PowerShell script for a DWP engineer that reports endpoint health with these sections:
+1. System uptime
+2. Free disk space
+3. Whether a reboot is pending(check the registry)
+4. Top 5 Processes by memory (Working set)
+5. Top 5 Processes by CPU
+6. Last 5 system log errors
+7. Internet speed
+8. Whether Microsoft defender service is running or not
+9. how many users logged in
+10. when was last windows update happened
+The script must be strictly read-only. No changes to any system state. Add comments to every section explaining what it does. Flag any item I need to verify before running . Create the script under day3 folder.
+
+
+Try to run the script in powershell in admin mode
+---
+windows -- powershell (right click "run as administrator")
+
+cd C:\Users\labuser\Documents\training\day3
+
+.\endpoint-health-report.ps1
+
+Prompt to create production ready script covering all check points
+---
+You are a PowerShell developer(version 5.1) . Write a PowerShell script for a DWP engineer to clean up temp files and the script should be safe to use on windows endpoint with following requirement
+1. The script should have a dry run option, when executed with dry run flag it should print the list of files it will delete
+2. Only target files older than a configurable number of days (default : 0) via a parameter
+3. Skip files that are currently locked. catch the error and log it do not stop the script.
+4. Try/catch error handling per file
+5. Log every action to a date and timestamped log file
+6. Report a summary at the end
+7. Add comments to every section explaining what it does.
+8. Implement a rollback functionality 
+9. Ensure the script execution is idempotent
+10. Create a readme file explaining the options in the script
+Create the script under day3 folder
+
+Try to run the script with dry run option -- refere your readme file for actual command
+---
+.\dwp-temp-cleanup.ps1 -DryRun
+
+Try to run the script  -- refere your readme file for actual command
+---
+.\dwp-temp-cleanup.ps1
+
+Try to run the script with dry run option -- refere your readme file for actual command
+---
+.\dwp-temp-cleanup.ps1 -DryRun
+
+Try roll back in dry run mode -- refere your readme file for actual command
+---
+.\dwp-temp-cleanup.ps1 -DryRun -Rollback
+
+Perform roll back -- refere your readme file for actual command
+---
+.\dwp-temp-cleanup.ps1 -Rollback
+
+Try to run the script with dry run option -- refere your readme file for actual command
+---
+.\dwp-temp-cleanup.ps1 -DryRun
+
+Exercises to perform
+---
+1. Startup program auditor -- day rin should list the programs in the start up. should have a disable flag which can get the program name as input and disable it.
+2. Large file finder -- read only script find and report large files, keep the threshold as input (default 100 MB)
+3. Disk health reporter -- Write a script that reports disk health and optimisation status.This script is strictly read-only — it must never run defragmentation,1.
+
+Day 4
+===
+review of existing script
+---
+create a file under day 3 with file name inherited.ps1
+
+$c = Get-CimInstance Win32_ComputerSystem
+$d = Get-PSDrive C | Select-Object -ExpandProperty Free
+$p = Get-Process | Sort-Object WS -Descending | Select-Object -First 5
+$e = Get-WinEvent -LogName System -MaxEvents 10 | Where-Object {$_.Level -eq 2}
+$u = Get-CimInstance Win32_UserProfile | Where-Object {
+     -not $_.Special -and $_.LastUseTime -lt (Get-Date).AddDays(-90)}
+Write-Host $c.Name $c.TotalPhysicalMemory
+Write-Host ([math]::Round($d/1GB,2)) 'GB free'
+$p | ForEach-Object { Write-Host $_.Name $_.WS }
+$e | ForEach-Object { Write-Host $_.TimeCreated $_.Message }
+if ($u.Count -gt 0) { Write-Host 'Stale profiles:' $u.Count }
+
+Ask AI to explain the script for you
+---
+you are a PowerShell developer, explain the PowerShell script @file:inherit.ps1  line by line in plain English. Foe each line provide below data
+1. what it does
+2. whether it reads a system parameter or changes a system parameter
+3. any risk associated with the command
+
+Prompt to refactor the script
+---
+refactor the PowerShell script to make it readable for all. Requirement
+1. Add comments above every line explaining its purpose
+2. Rename all single letter variables to descriptive names
+3. Add a header block: purpose, author, how to run the script etc
+4. Do not change what script does- inly improve readability
+
+Run the script in powershell
+---
+wondows -- powershell -- "right click" -- run as administrator
+
+cd C:\Users\labuser\Documents\training\day3
+
+.\inherit.ps1
+
+Ai Assisted windows log analysis
+---
+You are a DWP analyst working on windows update failure issue. Below are the relevant failure lines from windows update log on windows 11 endpoint. This error occurs repeatedly. Identify the distinct error code present, then give a ranked remediation plan (most likely fix first) with specific check for each. Treat all error codes as given. If you are uncertain about a code say so rather than guessing. Mark anything to verify against Microsoft documentation.
+
+2024-03-15 07:58:01.123  WindowsUpdateClient   Info   Checking for updates...
+2024-03-15 07:58:44.210  WindowsUpdateClient   Info   Found 3 applicable updates.
+2024-03-15 07:59:01.001  UpdateOrchestrator    Info   Downloading KB5034441 (2024-01 Cumulative Update for Windows 11 22H2)
+2024-03-15 07:59:55.887  UpdateOrchestrator    Info   Download complete. Beginning installation.
+2024-03-15 08:00:12.340  CBS                   Info   Starting component store operations for KB5034441.
+2024-03-15 08:00:58.112  CBS                   Warning Existing component store has minor inconsistencies. Attempting repair.
+2024-03-15 08:01:02.450  CBS                   Error  Failed to stage component store repair. HRESULT = 0x80073712.
+2024-03-15 08:01:10.780  WindowsUpdateClient   Warning Unable to connect to the remote server during validation (0x80072EFE). Retrying...
+2024-03-15 08:01:14.900  WindowsUpdateClient   Warning Retry 1 of 3 — connection re-established.
+2024-03-15 08:01:23.001  UpdateOrchestrator    Error  Failed to install KB5034441 (0x8007000E): Insufficient resources to complete the requested service.
+2024-03-15 08:01:23.110  UpdateOrchestrator    Error  Extended error: Recovery partition (450MB) is too small to stage update. Required: 862MB. Available: 448MB.
+2024-03-15 08:01:45.330  WindowsUpdateClient   Error  Installation Failure: Windows failed to install the following update with error 0x8007000E: 2024-01 Cumulative Update for Windows 11 22H2 for x64-based Systems (KB5034441).
+2024-03-15 08:02:11.004  UpdateOrchestrator    Info   Rolling back partial installation of KB5034441.
+2024-03-15 08:02:12.780  UpdateOrchestrator    Info   Rollback complete. System state restored.
+2024-03-15 08:02:13.001  UpdateOrchestrator    Info   Retry scheduled in 60 minutes.
+2024-03-15 08:02:14.450  CBS                   Info   Component store left in pre-repair state. Run DISM /Online /Cleanup-Image /RestoreHealth to resolve 0x80073712.
+2024-03-15 08:03:00.000  WindowsUpdateClient   Info   Update history logged. Next check: 2024-03-15 09:02:00.
+
+
+Ai assisted triage and rca for a incident
+---
+You are a DWP analyst, reviewing a incident. Below are windows security event log entries for a 30 minute window during which a user was locked out of their machine. For each event id explain what it records. Then reconstruct the sequence of events in plain English, and give the most likely cause for the lockout with evidence from events. Finally create a detailed RCA document with 5 why analysis and store it under day 3 folder
+
+08:02:14  Security  4625  Audit Failure  Account: jsmith
+          Failure reason: Unknown username or bad password
+          Source: DESKTOP-FB001  Logon type: 2 (Interactive)
+ 
+08:04:22  Security  4625  Audit Failure  Account: jsmith
+          Failure reason: Unknown username or bad password
+          Source: DESKTOP-FB001  Logon type: 2
+ 
+08:06:01  Security  4740  Audit Failure  Account: jsmith
+          Account locked out. Called from DESKTOP-FB001
+ 
+08:07:45  Security  4625  Audit Failure  Account: jsmith
+          Failure reason: Account locked out
+          Source: DESKTOP-FB001  Logon type: 7 (Unlock)
+ 
+08:22:10  Security  4722  Audit Success  Account: jsmith
+          Account enabled. Done by: FINBRIDGE\helpdesk-admin
+ 
+08:23:44  Security  4624  Audit Success  Account: jsmith
+          Successful logon. Logon type: 2
+          
+Exercise 1 — Application crash (Event Viewer, Application log) -- do the analysis and store it as document in day 3
+----
+Log Name: Application
+Source: Application Error
+Event ID: 1000
+Level: Error
+Date: 2024-03-15 09:14:22
+
+Faulting application name: OUTLOOK.EXE, version: 16.0.17126.20132
+Faulting module name: KERNELBASE.dll, version: 10.0.22621.3155
+Exception code: 0xc0000005
+Fault offset: 0x000000000003a4b2
+Faulting process ID: 0x1f4c
+Faulting application start time: 2024-03-15 09:13:44
+Faulting application path: C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+Faulting module path: C:\Windows\System32\KERNELBASE.dll
+Report ID: a3c2f1d4-89bb-4e21-91d7-f2c3a1b09e44
+
+Log Name: Application
+Source: Application Error
+Event ID: 1000
+Level: Error
+Date: 2024-03-15 09:17:45
+
+Faulting application name: OUTLOOK.EXE, version: 16.0.17126.20132
+Faulting module name: KERNELBASE.dll, version: 10.0.22621.3155
+Exception code: 0xc0000005
+Fault offset: 0x000000000003a4b2
+
+Log Name: Application
+Source: Windows Error Reporting
+Event ID: 1001
+Level: Information
+Date: 2024-03-15 09:18:01
+Description: Fault bucket 1847362910, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Log Name: Application
+Source: .NET Runtime
+Event ID: 1026
+Level: Error
+Date: 2024-03-15 09:18:05
+Description: Application: OUTLOOK.EXE
+Framework Version: v4.0.30319
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.AccessViolationException
+
+
+Exercise 2 — Service crash loop (System log) -- do the analysis and store it as document in day 3
+---
+Log Name: System
+Source: Service Control Manager
+Event ID: 7034  Level: Error  Date: 2024-03-15 10:01:14
+Description: The Print Spooler service terminated unexpectedly.
+It has done this 1 time(s).
+
+Log Name: System
+Source: Service Control Manager
+Event ID: 7034  Level: Error  Date: 2024-03-15 10:01:45
+Description: The Print Spooler service terminated unexpectedly.
+It has done this 2 time(s).
+
+Log Name: System
+Source: Service Control Manager
+Event ID: 7034  Level: Error  Date: 2024-03-15 10:02:16
+Description: The Print Spooler service terminated unexpectedly.
+It has done this 3 time(s).
+
+Log Name: System
+Source: Service Control Manager
+Event ID: 7031  Level: Error  Date: 2024-03-15 10:02:47
+Description: The Print Spooler service terminated unexpectedly.
+It has done this 4 time(s). The following corrective action will
+be taken in 60000 milliseconds: Restart the service.
+
+Log Name: System
+Source: Service Control Manager
+Event ID: 7023  Level: Error  Date: 2024-03-15 10:03:49
+Description: The Print Spooler service terminated with the
+following error: The specified module could not be found.
+
+Log Name: System
+Source: Service Control Manager
+Event ID: 7038  Level: Error  Date: 2024-03-15 10:03:50
+Description: The Print Spooler service was unable to log on as
+NT AUTHORITY\SYSTEM with the currently configured password due
+to the following error: Logon failure: the user has not been
+granted the requested logon type at this computer.
+
+Exercise 3 — RDP connection failure (System and Security logs) -- do the analysis and rca and store it as document in day 3
+---
+Log Name: System
+Source: TermDD
+Event ID: 56  Level: Error  Date: 2024-03-15 14:01:02
+Description: The Terminal Server security layer detected an
+error in the protocol stream and has disconnected the client.
+Client IP: 10.10.5.44
+
+Log Name: System
+Source: RemoteDesktopServices-RdpCoreTS
+Event ID: 140  Level: Warning  Date: 2024-03-15 14:01:02
+Description: A connection from the client computer with an IP
+address of 10.10.5.44 failed because the user name or password
+is not correct.
+
+Log Name: Security
+Event ID: 4625  Level: Audit Failure  Date: 2024-03-15 14:01:04
+Account: FINBRIDGE\bwalker
+Failure reason: Unknown username or bad password
+Logon type: 10 (RemoteInteractive)  Source IP: 10.10.5.44
+
+Log Name: Security
+Event ID: 4625  Level: Audit Failure  Date: 2024-03-15 14:03:18
+Account: FINBRIDGE\bwalker
+Failure reason: Unknown username or bad password
+Logon type: 10 (RemoteInteractive)  Source IP: 10.10.5.44
+
+Log Name: Security
+Event ID: 4625  Level: Audit Failure  Date: 2024-03-15 14:05:33
+Account: FINBRIDGE\bwalker
+Failure reason: Unknown username or bad password
+Logon type: 10 (RemoteInteractive)  Source IP: 10.10.5.44
+
+Log Name: Security
+Event ID: 4740  Level: Audit Failure  Date: 2024-03-15 14:05:34
+Account: FINBRIDGE\bwalker
+Caller computer: 10.10.5.44
+Description: A user account was locked out
+
+Log Name: System
+Source: RemoteDesktopServices-RdpCoreTS
+Event ID: 131  Level: Info  Date: 2024-03-15 14:22:07
+Description: Server accepted a new TCP connection from client
+10.10.5.44:52341.
+
+Log Name: Security
+Event ID: 4624  Level: Audit Success  Date: 2024-03-15 14:22:09
+Account: FINBRIDGE\bwalker
+Logon type: 10 (RemoteInteractive)  Source IP: 10.10.5.44
+
+Install chrome on lab server
+---
+https://www.google.com/chrome/index.html
+
+Install git bash on labserver
+--
+> []
+
+Access https://github.com/ in chrome (login to your personal account or create a new one)
+
+Create a new repo
+---
+https://github.com/new
+
+Repository name: aifordwp
+Choose visibility: public
+Add README: off
+Add .gitignore: no
+Add license: no
+
+Cretea repository
+
+select https
+
+Open command prompt
+---
+windows -- cmd
+
+cd Documents\training
+
+git init
+
+git add .
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+git commit -m "first commit"
+
+git branch -M main
+
+git remote add origin https://github.com/{your github id}/{your repo name}.git
+
+git push -u origin main
+
+sigin in with browser -- chrome -- authorize
+
+copy the url
+
+git repo
+---
+no	Name                            Repo
+0   Trainer                         https://github.com/sathishbob/aifordwp
+1	Aravind Srinivas Vempali:       https://github.com/aravindsrinivas63-afk/AI-for-DWP
+2	Ashwin Khttps:                  https://github.com/ashwink467-prog/AiforDWP
+3	Aspakul Mallick                 https://github.com/asfakulmallik-sudo/AIFORASPDWP
+4	Balamurugan M -                 https://github.com/Balamurugan2610/DWP_Bala
+5	Bhanu Prakash Dubash
+6	Bopanna P G                     https://github.com/BopannaPG/aifordwp
+7	Deepak Kumar Singh--------      https://github.com/deepaksingh5920-cpu/AIforDWP
+8	Gawrav Menon                    https://github.com/Gawravmenon/AI-For-DWP
+9	Dinesh Rajendran                https://github.com/dinadinesh91-coder/DWP-for-AI-services
+10	Diptesh Maitra:                 https://github.com/dipteshere/aifodwp
+11	Divesh Jamdar:                  https://github.com/jamdardivesh-coder/AIFORDWP
+12	Gopal Arjunan:                  https://github.com/gopalarjunan-1155/aifordwp
+13	Imran Jamadar:                  https://github.com/imranbaig36-spec/Imran
+14	Kalaiselvam Tamil Mani-         https://github.com/kalaiselvamt/aifordwp-kt
+15	Malla Harish Kumar              https://github.com/harishkumarmallav-commits/aifordwp
+16	Nayana Kumari Bekalnarendra-    https://github.com/Nayana-Sia/AIfordwp
+17	Ajmal Ahmad                     https://github.com/AhmedAJMAL8981/AI-FOR-DWP
+18	Pradeep R     ----------->>     https://github.com/magiceagle7707-oss/AI-for-DWP
+19	Prashant Thumbar ----           https://github.com/prashantthumbar/DWP-Training 
+20	Prathamesh Gavade               https://github.com/prathmesh808/AIForDWP
+21	Raja Ramasamy--                 https://github.com/rajaramasamyg-crypto/AIfordwp
+22	Rohit Rane---                   https://github.com/rockyrohitrane-sudo/aiforDWP
+23	Shari Mol                       https://github.com/molshari04-lgtm/aifordwp.git
+24	Shuvrojit Barua
+25	Souvik Pal:                     https://github.com/Souvik-Pal07/DWP-SouvikPal
+26	Sowvik Singha Deb:              https://github.com/sowviksdeb/AI-for-DWP
+27	Subash Selvaraj                 https://github.com/subaz21/aifordwp.git
+28	Tanni Das-                      https://github.com/Tanni26/AI-for-DWP
+29	Vanishri Rama Moger
+30	Vimal Narashima Sharma ----->   https://github.com/Vimal-Narashima/aifordwp
+
+    
+Login to azure
+---
+https://portal.azure.com
+
+enter you user name and password
+
+stay signed in -- yes
+
+keep your account secure -- next
+
+authenticator -- next
+
+scan qr - after scanning on your app -- next
+
+enter the number on your app
+
+done
+
+Ticket details for trouble shooting
+---
+FinBridge Service Desk — Incident Report
+Logged: 2024-03-15 07:18
+Reported by: Maria Lopez, Finance (ext 4421)
+ 
+"Hi, I logged into my AVD session this morning like normal and
+got a black screen. It eventually came back after about 30 seconds
+but some of my colleagues are saying theirs never comes back and
+they have to call you. This has never happened before. I'm on the
+finance desktop pool. My colleague in IT on the other pool is fine.
+This started this morning — it was fine yesterday."
+ 
+Incident notes:
+- Symptom: black screen post-login, variable duration
+- User pool: POOL-FIN-01
+- Unaffected pool: POOL-FIN-02 (IT team)
+- First report: ~07:00 today
+- Scope: multiple Finance users, ~40% of POOL-FIN-01
+- Recent change: overnight image update to POOL-FIN-01 at 02:00
+  (POOL-FIN-02 was NOT included in this update wave)
+
+Prompt based on the facts
+---
+You are a DWP engineer analyzing an avd incident, using only the scope fact, produce a ranked list of the 5 most likely cause for the black screen symptom. Most probable first. for each give: 
+	- Why this cause fits the scope facts
+	- the single fastest check to confirm or eliminate it
+weight your ranking using the timing clue (over night image update to one pool only). Do not commit to one cause yet
+
+scope facts:
+symptom: blank screen post login - clears after 30s for some user. persist for others
+who: ~40% of users on POOL-FIN-01.POOL-FIN-02 is completely un affected
+since:  ~07:00 this morning
+changes: overnight image update to POOL-FIN-01 at 02:00. POOL-FIN-02 was NOT updated
+
+chained promopt to use the pool 2 not updated so no impact as primary weight
+---
+Your ranking does not clearly use the timing clue. Answer this specifically: which of the 5 causes is most consistent with fact that POOL-FIN-02 was NOT updated and is completely un affected? re rank with that reasoning explicit 
+
+Create folder - day 4
+---
+vscode -- training -- new folder -- "day4"
+
+prompt to save the analysis
+---
+save this analysis and hypothsis as file under day 4
+
+Prompt to provide the evidence 
+---
+Here are the relevant event log entries from an affected AVD session host during the incident window and our ranked hypothesis from initial scope analysis
+
+For each hypothesis in the list:
+	- state whether this evidence support, contradicts or neutral towards it
+	- cite the specific event id and time stamp that determines the judgement
+Do not pick the winner yet, work through all the hypothesis
+
+hypothesis:  {your analysis file}
+
+Evidence:
+=== AVD Session Host: SHFIN-01-A  ===
+=== Event log export — 2024-03-15 07:00-07:30 ===
+=== Source: Application + System logs ===
+
+07:02:10  Microsoft-Windows-TerminalServices-LocalSessionManager  Event 21
+          Remote Desktop Services: Session logon succeeded.
+          User: FINBRIDGE\mlopez  Session ID: 3  Source: 10.10.1.55
+
+07:02:14  Microsoft-Windows-Kernel-General  Event 1
+          The system boot time was 2024-03-15 02:03:11.
+          (Host restarted after overnight image update)
+
+07:02:16  Application Error  Event 1000  Level: Error
+          Faulting application name: dwm.exe
+            version: 10.0.22621.2861
+          Faulting module name: igdumd64.dll
+            version: 31.0.101.4146
+          Exception code: 0xc0000005
+          Fault offset: 0x0000000000047f12
+          Faulting process id: 0x1a4c
+          Application path: C:\Windows\System32\dwm.exe
+          Module path: C:\Windows\System32\igdumd64.dll
+          Report ID: b7f2a3d1-44cc-4e88-9f12-3c1ab2d09e55
+
+07:02:17  Microsoft-Windows-TerminalServices-LocalSessionManager  Event 40
+          Remote Desktop Services: Session has been disconnected.
+          User: FINBRIDGE\mlopez  Session ID: 3
+          Reason code: 0
+
+07:02:18  Desktop Window Manager  Event 9009  Level: Error
+          The Desktop Window Manager has exited with code (0x40010004).
+
+07:02:44  Microsoft-Windows-TerminalServices-LocalSessionManager  Event 21
+          Remote Desktop Services: Session logon succeeded. (reconnect)
+          User: FINBRIDGE\mlopez  Session ID: 3
+
+07:02:46  Application Error  Event 1000  Level: Error
+          Faulting application name: dwm.exe  version: 10.0.22621.2861
+          Faulting module name: igdumd64.dll  version: 31.0.101.4146
+          Exception code: 0xc0000005
+
+07:02:47  Microsoft-Windows-TerminalServices-LocalSessionManager  Event 40
+          Remote Desktop Services: Session has been disconnected.
+          User: FINBRIDGE\mlopez  Session ID: 3
+
+07:03:01  Desktop Window Manager  Event 9009  Level: Error
+          The Desktop Window Manager has exited with code (0x40010004).
+
+07:03:10  Microsoft-Windows-TerminalServices-LocalSessionManager  Event 21
+          Remote Desktop Services: Session logon succeeded. (second reconnect)
+          User: FINBRIDGE\mlopez  Session ID: 4
+
+07:08:22  Microsoft-Windows-TerminalServices-LocalSessionManager  Event 21
+          Remote Desktop Services: Session logon succeeded.
+          User: FINBRIDGE\akapoor  Session ID: 5  Source: 10.10.1.61
+
+07:08:24  Application Error  Event 1000  Level: Error
+          Faulting application name: dwm.exe  version: 10.0.22621.2861
+          Faulting module name: igdumd64.dll  version: 31.0.101.4146
+          Exception code: 0xc0000005
+
+=== Comparison: Session Host SHFIN-02-A (POOL-FIN-02 — unaffected) ===
+=== Image version: 10.0.22621.2861-build-20240313 (pre-update) ===
+
+07:01:44  Microsoft-Windows-TerminalServices-LocalSessionManager  Event 21
+          Remote Desktop Services: Session logon succeeded.
+          User: FINBRIDGE\bwalker  Session ID: 2
+
+07:01:46  Desktop Window Manager  Event 9011  Level: Information
+          Desktop Window Manager started successfully.
+          No Application Error events in this window.
+          
+Prompt to list the resolution
+---
+Based on the elimination you just did, one hypothesis survives the evidence. Name it and provide the detailed resolution steps
+
+Prompt to update the document
+---
+update the evet detaills, reviewed hypothesis , resolutions to the analysis document. Dont modify the previous contenet, just append the new detauls
+
+Prompt to create a detailled RCA
+---
+The suggested resolution was applied the issue is resolved at 10: 00 AM. Verified users are logging in to hosts in POOL-FIN-01 and no issues reported. Create a detailed rca document with all supporting evidence, time line , 5 why analysis and preventive action.save it a separate file under day 4
+
+Day 5
+===
+
+prompt exercise answers
+---
+
+Wrong
+---
+"write something for the user about their email"
+
+Corrected
+---
+You are a DWP service-desk analyst. A FinBridge user's shared mailbox access was broken after the Win11 migration and has now been restored — the cause was a stale Outlook profile that was recreated during remediation.
+
+Write a message to the user confirming the issue is resolved.
+Requirements:
+- Plain language, no jargon
+- Under 80 words
+- Reassure them their emails are safe and nothing was lost
+- Tell them what to do next (sign back into Outlook)
+- Friendly, calm tone
+
+Return only the message — no subject line, no preamble.
+
+
+Wrong
+---
+"you are a helpful assistant who always gives detailed, accurate, professional, well-structured, clear and concise answers. Tell me about Intune."
+
+Corrected
+---
+You are a DWP service-desk analyst onboarding a new team member who has never used Intune before.
+
+Explain what Microsoft Intune is and does, covering:
+- What types of devices and settings it manages
+- How a device gets enrolled
+- Two concrete examples of what the DWP team uses it for
+  day-to-day in a Win11 migration context
+
+Under 200 words. Plain language — the new team member has endpoint experience but no Intune experience. No marketing language. Return only the explanation.
+
+Wrong
+---
+"A user says their laptop is slow. What is the problem and fix it."
+
+Corrected
+--
+You are a DWP service-desk analyst. A FinBridge user reports their Win11 laptop feels slow after the recent migration. You have no further information yet.
+
+Produce a ranked differential of the 5 most likely causes in a managed enterprise environment immediately post-migration. Most probable first. For each give:
+- Why it is likely in a post-migration context
+- The single fastest check to confirm or rule it out
+
+Do not name a single definitive cause — you do not have enough information yet. Do not suggest fixes until a cause is confirmed. Mark anything uncertain as 'to confirm'.
+
+
+Wrong
+---
+"List every possible reason a Windows 11 device might have any kind of issue connecting to any kind of network resource."
+
+Corrected
+--
+You are a DWP service-desk analyst. A FinBridge Win11 laptop an reach the internet but cannot access internal SharePoint r mapped drives after migration. Other devices on the same loor are unaffected.
+
+Produce a ranked list of the 5 most likely causes for this secific symptom, most probable first. For each give:
+- Why it fits the evidence (internet works, internal fails,
+  one device only, post-migration)
+- The single fastest check to confirm or eliminate it
+
+Do not list generic network causes — rank specifically against the evidence given.
+
+
+Wrong
+---
+"Rewrite this so it sounds better: 'Device non-compliant due to BitLocker not enabled. Remediation applied. Compliance restored.'"
+
+Corrected
+--
+Rewrite the engineer note below into two versions:
+
+Version 1 — End-user message:
+- Plain language, no jargon (no 'BitLocker', 'compliant',
+  'remediation')
+- Under 60 words
+- Reassure the user their device is working normally
+- Tell them what if anything they need to do
+- Calm, friendly tone
+
+Version 2 — IT audit log entry:
+- Technical shorthand is fine
+- Keep all technical detail: BitLocker status, remediation
+  action taken, compliance outcome
+- Under 40 words
+- Factual, no narrative
+
+Return both versions clearly labelled. Do not add facts not present in the original note.
+
+Note: Device non-compliant due to BitLocker not enabled. Remediation applied. Compliance restored.
+
+Wrong
+---
+"You are a senior DWP engineer with 20 years experience. A user cannot log in. Solve this completely and give me the guaranteed fix.
+
+Corrected
+--
+You are a DWP service-desk analyst. A FinBridge user on a Win11 device cannot log in this morning. You have no further information yet.
+
+Produce a ranked differential of the 5 most likely causes, most probable first. For each give:
+- Why it is likely
+- The single fastest check to confirm or eliminate it
+
+Then list the 3 scope questions you would ask the user or check in the logs before investigating further:
+- Is it one user or multiple?
+- Is it this device only or others too?
+- What is the exact error message or behaviour?
+
+Do not provide a fix yet — a correct diagnosis requires evidence first. Do not claim certainty on any cause. Mark anything that depends on information you do not have as 'to confirm'.
+
+Prompt to push the changes to repo
+---
+commit all the changes done as day4 work and push it to repo
+
+Prompt to create end user communication
+---
+
+Based on the incident analysis and rca document write a end-user communication for three different audience. Each version mist carry exactly the same facts - do not add or remove information.
+
+Audience 1 — Non-technical executive
+- No jargon whatsoever
+- Under 80 words
+- Lead with reassurance (their access and data are safe)
+- End with what they need to do, if anything
+- Tone: calm, professional, brief
+
+Audience 2 — Affected end-user team (10 people, non-technical)
+- Plain language, friendly tone
+- Under 100 words
+- Explain what happened in one sentence without jargon
+- Tell them what to do if they see the same issue
+- End with who to contact
+
+Audience 3 — Engineer-to-engineer internal note
+- Technical shorthand is fine
+- Include: root cause, exact action taken, config detail, verification step, and the preventive action needed
+- No length limit — include everything a colleague needs to pick this up if it recurs
+
+Save this as a file under day 4
+
+Prompt for closure note
+---
+Based on the incident analysis and rca document write a write a closure note in this structure:
+Resolved. Cause: {cause}. Action: {action taken}. Preventive: {preventive step}. User confirmed working.
+save it as a file under day 4
+
+Prompt for known error document
+---
+From the verified RCA and incident analysis, draft a known-error record for our DWP knowledge base with exactly these six fields:
+
+Symptom     : what the user experiences
+Cause       : the verified root cause
+Scope       : which systems and users are affected
+Workaround  : what to do right now to restore service
+Permanent fix: the lasting resolution
+How to spot it: specific signals to identify this next time (event IDs, error messages, module names)
+
+Keep each field to 1-3 sentences. Only use facts from the RCA — do not add assumptions or generalisations
+
+save this as a document under day4 directory.
+
+Prompt for known error document
+---
+From the verified RCA and incident analysis, draft a known-error record for our DWP knowledge base with exactly these six fields:
+
+Symptom     : what the user experiences
+Cause       : the verified root cause
+Scope       : which systems and users are affected
+Workaround  : what to do right now to restore service
+Permanent fix: the lasting resolution
+How to spot it: specific signals to identify this next time (event IDs, error messages, module names)
+
+Keep each field to 1-3 sentences. Only use facts from the RCA — do not add assumptions or generalisations
+
+save this as a document under day4 directory.
+
+Prompt based on the facts -- user logon issue
+---
+You are a DWP engineer analysing user logon incident. using only the scope fact, produce a ranked list of the 5 most likely cause for the login failure symptom.
+Most probable first. For each give:
+	- Why this cause fits the scope facts
+ 	- the single fastest check to confirm or eliminate it
+Do not commit to one cause yet. 
+
+scope facts:
+symptom : user cthompson not able to login 
+who : cthompson only one user
+since: ~08:40 this morning
+change: Nill
+
+save this analysis and hypothsis as file under day 4
+
+
+Prompth to provide evidence
+---
+Based on our ranked hypothesis from initial scope analysis, Here are the relevant event log entries for the affected user during the incident window and 
+
+For each hypothesis in the list:
+	- state whether this evidence support, contradicts or neutral towards it
+	- cite the specific event id and time stamp that determines the judgement
+Do not pick the winner yet, work through all the hypothesis
+
+=== Security Event Log — DESKTOP-FB022 ===
+=== 2024-03-15 08:44-09:12 ===
+
+08:44:01  Security  Event 4776  Audit Failure
+          The domain controller attempted to validate credentials.
+          Account: FINBRIDGE\cthompson
+          Error Code: 0xC000006A (wrong password)
+          Source workstation: DESKTOP-FB022
+
+08:44:03  Security  Event 4625  Audit Failure
+          Account: FINBRIDGE\cthompson
+          Failure reason: Unknown user name or bad password
+          Logon type: 2 (Interactive)  Source: DESKTOP-FB022
+
+08:44:28  Security  Event 4625  Audit Failure
+          Account: FINBRIDGE\cthompson
+          Failure reason: Unknown user name or bad password
+          Logon type: 2 (Interactive)  Source: DESKTOP-FB022
+
+08:44:55  Security  Event 4625  Audit Failure
+          Account: FINBRIDGE\cthompson
+          Failure reason: Unknown user name or bad password
+          Logon type: 2 (Interactive)  Source: DESKTOP-FB022
+
+08:44:56  Security  Event 4740  Audit Failure
+          A user account was locked out.
+          Account: FINBRIDGE\cthompson
+          Caller computer: DESKTOP-FB022
+
+08:45:10  Security  Event 4625  Audit Failure
+          Account: FINBRIDGE\cthompson
+          Failure reason: Account locked out
+          Logon type: 7 (Unlock attempt)  Source: DESKTOP-FB022
+
+08:45:44  Security  Event 4771  Audit Failure
+          Kerberos pre-authentication failed.
+          Account: FINBRIDGE\cthompson
+          Failure code: 0x18 (wrong password)
+          Source IP: 10.10.8.112
+          (NOTE: This IP differs from DESKTOP-FB022 which is 10.10.1.88)
+
+08:46:01  Security  Event 4771  Audit Failure
+          Kerberos pre-authentication failed.
+          Account: FINBRIDGE\cthompson
+          Failure code: 0x18 (wrong password)
+          Source IP: 10.10.8.112
+
+08:46:33  Security  Event 4771  Audit Failure
+          Kerberos pre-authentication failed.
+          Account: FINBRIDGE\cthompson
+          Failure code: 0x18 (wrong password)
+          Source IP: 10.10.8.112
+
+Prompt to list the resolution
+---
+Based on the elimination you just did, one hypothesis survives the evidence. Name it and provide the detailed resolution steps
+
+Prompt to update the document -- only if the document not updated
+---
+update the event details, susrvided hypothesis, resolution to the analysis document. Dont modify the previous content, just appened new details. 
+
+Prompt to create a detailled RCA
+---
+The suggested resolution was applied the issue is resolved at 09:09 AM. Verified user logging in to host and no issues reported. Create a detailed rca document with all supporting evidence, time line , 5 why analysis and preventive action.save it a separate file under day 4
+
+supporting event log:
+
+09:08:14  Security  Event 4722  Audit Success
+          A user account was enabled.
+          Account: FINBRIDGE\cthompson
+          Done by: FINBRIDGE\helpdesk-admin
+
+09:09:01  Security  Event 4624  Audit Success
+          An account was successfully logged on.
+          Account: FINBRIDGE\cthompson
+          Logon type: 2 (Interactive)  Source: DESKTOP-FB022
+          
+Prompt for end user communication
+---
+Based on the incident analysis and rca document write a enduser communication for THREE different audiences. Each version must
+carry exactly the same facts — do not add or remove information.
+
+Audience 1 — Non-technical executive
+- No jargon whatsoever
+- Under 80 words
+- Lead with reassurance (their access and data are safe)
+- End with what they need to do, if anything
+- Tone: calm, professional, brief
+
+Audience 2 — Affected end-user team (10 people, non-technical)
+- Plain language, friendly tone
+- Under 100 words
+- Explain what happened in one sentence without jargon
+- Tell them what to do if they see the same issue
+- End with who to contact
+
+Audience 3 — Engineer-to-engineer internal note
+- Technical shorthand is fine
+- Include: root cause, exact action taken, config detail,
+  verification step, and the preventive action needed
+- No length limit — include everything a colleague needs to
+  pick this up if it recurs
+  
+save this as a file under day 4
+
+Prompt for closure note
+---
+Based on the incident analysis and rca document write a write a closure note in this structure:
+Resolved. Cause: {cause}. Action: {action taken}. Preventive: {preventive step}. User confirmed working.
+save it as a file under day 4
+
+Prompt for known error document
+---
+From the verified RCA and incident analysis, draft a known-error record for our DWP knowledge base with exactly these six fields:
+
+Symptom     : what the user experiences
+Cause       : the verified root cause
+Scope       : which systems and users are affected
+Workaround  : what to do right now to restore service
+Permanent fix: the lasting resolution
+How to spot it: specific signals to identify this next time (event IDs, error messages, module names)
+
+Keep each field to 1-3 sentences. Only use facts from the RCA — do not add assumptions or generalisations
+
+save this as a document under day4 directory.
+
+Exercise 1: craete all the 5 documents (analysis with solutions, rca, communication, closure note and known error)
+---
+
+=================================================================
+FAULT-A: Three Win11 machines, Floor 3 — no Group Policy
+=================================================================
+
+=== System Event Log — DESKTOP-FB031 ===
+=== Startup window: 2024-03-15 07:40-07:55 ===
+=== (3 of 4 machines on OU=Finance affected) ===
+
+07:40:02  Service Control Manager  Event 7036
+          The Network Location Awareness service entered running state.
+
+07:40:08  Netlogon  Event 5719  Level: Error
+          This computer was unable to set up a secure channel to domain
+          FINBRIDGE — no domain controller available.
+          DNS query for FINBRIDGE-DC01.finbridge.local returned no response.
+
+07:40:09  GroupPolicy  Event 1058  Level: Error
+          Group Policy processing failed. Cannot access:
+          \\FINBRIDGE-DC01\sysvol\finbridge.local\Policies\
+          {3A1B2C4D-E5F6-7890-ABCD-EF1234567890}\gpt.ini
+          Error code: 0x3 (The system cannot find the path specified)
+
+07:40:10  GroupPolicy  Event 1030  Level: Warning
+          Cannot query list of Group Policy objects.
+          Error code: 0x546
+
+07:40:11  GroupPolicy  Event 1058  Level: Error
+          Group Policy processing failed. Same as above.
+
+07:40:12  GroupPolicy  Event 1129  Level: Error
+          Group Policy failed — no network connectivity to a domain
+          controller. A success message will be generated once
+          connectivity is restored.
+
+07:41:05  DNS Client Events  Event 1014  Level: Warning
+          Name resolution for FINBRIDGE-DC01.finbridge.local timed out.
+          None of the configured DNS servers responded.
+
+07:42:18  DHCP Client  Event 50036  Level: Information
+          IP address 10.10.3.144 leased from server 10.10.0.1.
+          DNS servers assigned by DHCP: 10.10.3.250
+          (NOTE: 10.10.3.250 is the OLD DNS server.
+           It was decommissioned at 02:00 in the migration wave.
+           The correct new DNS server is 10.10.0.10.
+           The DHCP scope for this subnet was not updated.)
+
+07:44:01  GroupPolicy  Event 1129  Level: Error
+          Group Policy processing failed again — no DC connectivity.
+
+=== Comparison: DESKTOP-FB029 (same OU — unaffected) ===
+
+07:40:05  DHCP Client  Event 50036
+          IP: 10.10.3.141
+          DNS servers assigned: 10.10.0.10  (correct new DNS)
+
+07:40:11  GroupPolicy  Event 1500  Level: Information
+          Group Policy settings processed successfully.
+          (FB029 was manually reconfigured before migration wave)
+
+DHCP comparison (from server logs):
+  FB055-057 DNS assigned: 172.16.5.5
+    (Floor 3 local DNS — decommissioned 2024-03-14 overnight)
+  FB058 DNS:              10.10.0.10
+    (Central DNS — correct, manually set before migration)
+  Root cause: DHCP scope for Floor 3 subnet still references
+  the old DNS server. FB058 was manually pre-configured and
+  therefore unaffected.
+
+Exercise 2: craete all the 5 documents (analysis with solutions, rca, communication, closure note and known error)
+---
+FAULT-B: Finance team cannot access shared drives (45 users)
+=================================================================
+Source: Intune Management Extension Log + System Log
+Affected: All Finance users (DESKTOP-FB* devices, OU=Finance)
+ 
+[08:00:01]  ScriptRunner  Info   Executing: Map-FinBridgeDrives.ps1
+[08:00:02]  ScriptRunner  Info   Script context: SYSTEM account
+[08:00:03]  ScriptRunner  Warning Network path \\finbridge-fs01\Finance
+            not accessible from SYSTEM context at execution time
+[08:00:03]  ScriptRunner  Error  Script Map-FinBridgeDrives.ps1 failed.
+            Exit code: 1. Error: Network name cannot be found.
+[08:00:04]  ScriptRunner  Info   No retry configured.
+ 
+System Log — DESKTOP-FB041:
+08:00:05  Service Control Manager  Event 7036
+          Workstation service entered running state.
+08:00:06  GroupPolicy  Event 1500
+          Group Policy settings processed successfully.
+          (GP is fine — this is NOT a GP issue)
+08:00:07  Ntfs  Event 98  Warning
+          File system could not map drive letter S:
+          Drive letter has not been assigned.
+ 
+Prior change note (from migration change log):
+  2024-03-14 23:30 — Drive mapping script migrated from
+  GPO logon script (runs as USER) to Intune PowerShell
+  script (runs as SYSTEM). Script not updated to handle
+  SYSTEM context — network paths via UNC require the
+  Workstation service and mapped credentials which are
+  not available to SYSTEM at login time.
+  Source: DESKTOP-FB022
+  
+Create folder for day 5
+---
+vscode -- training - day5
+
+Prompt to create the playbook for the avd incidenet
+---
+You are a DWP engineer writing a runbook for colleagues who will follow it cold, under pressure. Convert this RCA into a  runbook with below sections:
+1. prerequisites: what the engineer needs before starting (access rights, tools, which system etc)
+2. Procedure: numbered steps, one action per step, expected result after each step 
+3. Verification: how to confirm the fix worked before closing
+4. Rollback: what to do if the procedure makes thing worse - be specific not generic
+5. Notes: edge cases, warnings, related incidents
+
+rules:
+- Every step must be a single and concrete action
+- No step should require the engineer to guess what to do
+- the rollback section must be immediately actionable 
+- Flag any step that requires elevated permissions
+
+RCA: {avd issue rca file}
+
+save this as a file under day5 folder
+
+
+Prompt to improvise prequsite and procedure section
+---
+Review the Prerequisites and procedure section you just wrote. In the Prerequisites section have a check list covering the access details, tools and mandatory information from the end user so that the engineer will ensure he has all the information before starting to work on the issue.  In the procedure section, i see the steps are very generic not followable by a junior engineer. rewrite it with specific portal or console location . Do the similar for log location also.
+
+Prompt to improvie the verification, rollback and add header
+---
+Review the Verification section you just wrote.i see the steps are very generic not followable by a junior engineer. rewrite it with specific portal or console location . Do the similar for log location also.
+Review the roll back section. A user must be able to execute it in under 3 minutes without any guidance. Ensure that the roll back instruction can fit this also rewrite the instructions with specific portal or console and log locations.
+Add a version header to the top of the runbook with these fields: Title, Version (1.0), Date (07/08/2026), Author (Sathishbabu), reviewed (self), status (draft), change (initial version from RCA).
+
+Prompt to generate a level1 self serivice article
+---
+From the run book just created, write an L1 self service knowledge base article for a non technical end user. Rules for L1 article:
+- Maximin 400 words
+- Zero jargon - no term like DWM, image, host pool, session host, dll , graphics driver, etc
+- only include steps the end user can safely do themself (logging off, waiting calling the desk)
+- Do not include any step that requires IT access or knowledge.
+- reassure the user that their data is safe
+- end with a clear 'contact the service desk if...' line
+- Provide the list of details that the user can mention in the ticket.
+- friendly and calm tone
+- Add version header: v 1.0, 07/08/2026, status : Draft
+
+Prompt for jargon test
+---
+Read the L1 article you just wrote. List every word or phrase that a non-technical office worker might not understand. For each flagged term, suggest a plain replacement. Then rewrite the article with all replacements applied.
+
+Exercise
+--
+create runbook, L1 kb article form the rca of incident "Finance team cannot access shared drives"
+
+Prompt to push the changes to repo
+---
+commit all the changes done as day5 work and push it to repo
+
+day 6
+===
+prompt for L2/L3 KB article
+---
+From the run book created, write an L2/L3 knowledge base article for a DWP engineer who has never seen this incident before and must be able to diagnose it from scratch
+
+the article should have below sections:
+Background: what the system does and why it matter
+symptom: what the engineer observers and what the user report 
+root cause: the specific technical cause with the evidence that confirms it
+Detection: exactly how to confirm this is the issue before acting- include specific event ids, log locations and what to look for
+Resolution: step-by-step fix with expected result after each step - include specific portal/console paths
+Verification: how to confirm the fix worked
+Rollback: what to do if the fix makes thing worse- be specific
+Preventive: the specific change to process or tooling that stop this recurring
+related: other incidents or KB article this connects to
+
+Rules:
+- Include all specific event ids
+- Include comparison check (ex: pool2 vs pool 1)
+- Every detection step must have the exact log location and field
+- Every resolution step must name the exact azure portal path 
+- the preventive section must provide specific changes not just 'test before applying'
+- Add version header: v 1.0, 07/08/2026, status : Draft
+
+
+Prompt to update the document to speed up the detection
+---
+Read the Detection section of the L2/L3 article you just wrote. An engineer must be able to open the right log, find the right event, and confirm this is the issue in under 3 minutes.
+
+Check it against these requirements and rewrite only the Detection section if any fail:
+
+1. Does it name the exact log location?
+   Required: Application log (not just 'event logs' or   'Windows logs')
+2. Does it give the exact Event ID to search for?
+   Required: Event 1000 AND Event 9009 both named
+3. Does it name the faulting module to look for in Event 1000?
+   Required: igdumd64.dll named explicitly
+4. Does it give the healthy baseline for comparison?
+   Required: Event 9011 on POOL-FIN-02 named as the unaffected control
+5. Does it give the azure cli or PowerShell command to extract the events and details
+   quickly rather than clicking through Event Viewer and azure console?
+   Required: add commands if missing:
+   
+Prompt to update the document to speed up the resolution, verification and roll back
+---
+Read the resolution, verification, rollback section of the L2/L3 article you just wrote. An engineer must be able to open the right tools, find the right options, and resolve the issue in under 5 - 10  minutes.
+
+Check it against these requirements and rewrite only the resolution, verification, rollback section if any fail:
+
+1. Does it name the exact path and options to look for?
+   Required: azure -- host pool -- poll name (not just pool name)
+4. Does it give the exact path and option for verification and rollback?
+   Required: azure -- host pool -- fin01-- host-- setting -- image etc
+5. Does it give the azure cli or power shell command to perform resolution, verification, rollback to fix quickly rather than clicking through azure portal?
+   Required: add commands if missing:
+   
+Prompt to improvise the preventive secction
+---
+Read the preventive section of the L2/L3 article you just wrote. strengthen it, not replace it.
+
+Review the preventive section below against these criteria:
+1. Specificity of controls
+   Each control must name: who does it, when they do it, what the pass/fail criteria is, and what happens if it fails. If any control says 'implement X' without those four elements, add them.
+
+2. Measurability
+   Each control must have a concrete, observable signal that tells an engineer whether the control worked or failed. Vague signals like 'monitor for issues' must be replaced with specific event IDs, thresholds, or counts.
+
+3. Ownership
+   Each control must name a role (not a person) who owns it. If ownership is absent, add the most logical role from:DWP engineer, change manager, release engineer, image owner, service desk lead.
+
+4. Timing
+   Each control must state when in the release process it fires — before deployment, during deployment, or after deployment. If timing is missing, add it.
+
+5. Automation vs manual
+   For each control, note whether it is manual or automated.If it is manual but could realistically be automated,add a one-line note on the automation approach.
+
+6. Gap check
+   After reviewing the existing controls, identify any of these standard preventive layers that are missing and add a brief control for each gap:
+   - Pre-deployment test gate (smoke test before release)
+   - In-flight monitoring (alert during rollout window)
+   - Post-deployment validation (confirm healthy state before closing the change)
+   - Rollback trigger (automatic or manual threshold)
+   - Knowledge update (update runbook / checklist from this incident's learnings)
+
+Rules:
+- Do not remove any existing control — only strengthen or add
+- Keep each control to 3-4 lines maximum
+- Flag any control that depends on a tool or process that may not exist yet — mark it [REQUIRES: <tool/process>]
+
+
+Exercise
+--
+craete runbook, L1, L2/L3 kb article for the rca of incident "Finance team cannot access shared drives"
+
+connect to azure account
+---
+acess https://portal.azure.com in chrome and signout or sigin using different account
+
+no	Name	                    Azure Username	            Password
+1	Aravind Srinivas Vempali	traininguser82@zippyops.in	5keJ5rfn5UVC68f7
+2	Ashwin K	                traininguser83@zippyops.in	5keJ5rfn5UVC68f7
+3	Aspakul Mallick	            traininguser53@zippyops.in	5keJ5rfn5UVC68f7
+4	Balamurugan M	            traininguser54@zippyops.in	5keJ5rfn5UVC68f7
+5	Bhanu Prakash Dubash	    traininguser55@zippyops.in	5keJ5rfn5UVC68f7
+6	Bopanna P G	                traininguser56@zippyops.in	5keJ5rfn5UVC68f7
+7	Deepak Kumar Singh	        traininguser57@zippyops.in	5keJ5rfn5UVC68f7
+8	Deepak Roshan Mohan	        traininguser58@zippyops.in	5keJ5rfn5UVC68f7
+9	Dinesh Rajendran	        traininguser59@zippyops.in	5keJ5rfn5UVC68f7
+10	Diptesh Maitra	            traininguser60@zippyops.in	5keJ5rfn5UVC68f7
+11	Divesh Jamdar	            traininguser61@zippyops.in	5keJ5rfn5UVC68f7
+12	Gopal Arjunan	            traininguser62@zippyops.in	5keJ5rfn5UVC68f7
+13	Imran Jamadar	            traininguser63@zippyops.in	5keJ5rfn5UVC68f7
+14	Kalaiselvam Tamil Mani	    traininguser64@zippyops.in	5keJ5rfn5UVC68f7
+15	Malla Harish Kumar	        traininguser65@zippyops.in	5keJ5rfn5UVC68f7
+16	Nayana Kumari Bekalnarendra	traininguser66@zippyops.in	5keJ5rfn5UVC68f7
+17	Ajmal Ahmad	                traininguser67@zippyops.in	5keJ5rfn5UVC68f7
+18	Pradeep R	                traininguser68@zippyops.in	5keJ5rfn5UVC68f7
+19	Prashant Thumbar	        traininguser69@zippyops.in	5keJ5rfn5UVC68f7
+20	Prathamesh Gavade	        traininguser70@zippyops.in	5keJ5rfn5UVC68f7
+21	Raja Ramasamy	            traininguser71@zippyops.in	5keJ5rfn5UVC68f7
+22	Rohit Rane	                traininguser72@zippyops.in	5keJ5rfn5UVC68f7
+23	Shari Mol	                traininguser73@zippyops.in	5keJ5rfn5UVC68f7
+24	Shuvrojit Barua	            traininguser74@zippyops.in	5keJ5rfn5UVC68f7
+25	Souvik Pal	                traininguser75@zippyops.in	5keJ5rfn5UVC68f7
+26	Sowvik Singha Deb	        traininguser76@zippyops.in	5keJ5rfn5UVC68f7
+27	Subash Selvaraj	            traininguser77@zippyops.in	5keJ5rfn5UVC68f7
+28	Tanni Das	                traininguser78@zippyops.in	5keJ5rfn5UVC68f7
+29	Vanishri Rama Moger	        traininguser79@zippyops.in	5keJ5rfn5UVC68f7
+30	Vimal Sharma Narshima	    traininguser80@zippyops.in	5keJ5rfn5UVC68f7
+	Trainer	                    traininguser81@zippyops.in	5keJ5rfn5UVC68f7
+
+Login to intunes via m365 account in edge browser
+---
+In edge login to https://intune.microsoft.com
+
+M365 account
+---
+No	Name	                    Username 	        Temporary Password
+1	Aravind Srinivas Vempali	p31@zippyops.in	    DWPLab2024!
+2	Ashwin K	                p32@zippyops.in	    DWPLab2024!
+3	Aspakul Mallick	            p33@zippyops.in	    DWPLab2024!
+4	Balamurugan M	            p34@zippyops.in	    DWPLab2024!
+5	Bhanu Prakash Dubash	    p35@zippyops.in	    DWPLab2024!
+6	Bopanna P G	                p36@zippyops.in	    DWPLab2024!
+7	Deepak Kumar Singh	        p37@zippyops.in	    DWPLab2024!
+8	Deepak Roshan Mohan	        p38@zippyops.in	    DWPLab2024!
+9	Dinesh Rajendran	        p39@zippyops.in	    DWPLab2024!
+10	Diptesh Maitra	            p40@zippyops.in	    DWPLab2024!
+11	Divesh Jamdar	            p41@zippyops.in	    DWPLab2024!
+12	Gopal Arjunan	            p42@zippyops.in	    DWPLab2024!
+13	Imran Jamadar	            p43@zippyops.in	    DWPLab2024!
+14	Kalaiselvam Tamil Mani	    p44@zippyops.in	    DWPLab2024!
+15	Malla Harish Kumar	        p45@zippyops.in	    DWPLab2024!
+16	Nayana Kumari Bekalnarendra	p46@zippyops.in	    DWPLab2024!
+17	Ajmal Ahmad	                p47@zippyops.in	    DWPLab2024!
+18	Pradeep R	                p48@zippyops.in	    DWPLab2026!
+19	Prashant Thumbar	        p49@zippyops.in	    DWPLab2024!
+20	Prathamesh Gavade	        p50@zippyops.in	    DWPLab2024!
+21	Raja Ramasamy	            p51@zippyops.in	    DWPLab2024!
+22	Rohit Rane	                p52@zippyops.in	    DWPLab2024!
+23	Shari Mol	                p53@zippyops.in	    DWPLab2024!
+24	Shuvrojit Barua	            p54@zippyops.in	    DWPLab2024!
+25	Souvik Pal	                p55@zippyops.in	    DWPLab2024!
+26	Sowvik Singha Deb	        p56@zippyops.in	    DWPLab2024!
+27	Subash Selvaraj	            p57@zippyops.in	    DWPLab2024!
+28	Tanni Das	                p58@zippyops.in	    DWPLab2024!
+29	Vanishri Rama Moger	        p59@zippyops.in	    DWPLab2024!
+30	Vimal Sharma Narshima	    p60@zippyops.in	    DWPLab2024!
+
+change the password
+
+setup authendicator
+
+open azure cloud shell
+---
+azure portal -- azure cloud shell icon
+    bash
+        selct your subscription in dropdown
+    apply
+
+Create a resource group in azure
+---
+az group create --name dwpai-lab-rg --location eastus
+
+
+command to create vm
+---
+az vm create --resource-group dwpai-lab-rg --name dwp-p{your m365 id}-win --image MicrosoftWindowsDesktop:windows-11:win11-24h2-ent:latest --size Standard_B2ms --admin-username dwpadmin --admin-password 'DWPLab2024@Az' --location eastus --public-ip-sku Standard --os-disk-size-gb 128 --storage-sku StandardSSD_LRS --nsg-rule RDP --security-type TrustedLaunch --enable-secure-boot true --enable-vtpm true
+
+assign identity to yout vm
+---
+az vm identity assign --resource-group dwpai-lab-rg --name {name used in last command}
+
+install  ad extension
+---
+az vm extension set --resource-group dwpai-lab-rg --vm-name {name used in last command} --name AADLoginForWindows --publisher Microsoft.Azure.ActiveDirectory --version 2.0
+
+command to provide acces for your m365 account to the vm
+---
+VM_ID=$(az vm show --resource-group dwpai-lab-rg --name {name used in last command} --query id --output tsv)
+
+az role assignment create --role "Virtual Machine Administrator Login" --assignee "{your M365 login}" --scope $VM_ID
+
+connectto the windows vm
+---
+lab server -- windows search -- mstsc -- remote desktopconnection
+
+computer: your public ip
+username: dwpadmin
+password: DWPLab2024@Az
+
+connect to m365 account
+---
+windos vm -- windows icon -- settings -- "access work or school"
+
+connect
+
+email: m365 login
+mdm server url: https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc
+
+password: your m365 password
