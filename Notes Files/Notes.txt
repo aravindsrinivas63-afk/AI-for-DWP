@@ -1681,3 +1681,251 @@ email: m365 login
 mdm server url: https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc
 
 password: your m365 password
+
+Day 7
+===
+
+azure -- virtual machine -- your vm -- start
+
+connectto the windows vm
+---
+lab server -- windows search -- mstsc -- remote desktopconnection
+
+computer: your public ip
+username: dwpadmin
+password: DWPLab2024@Az
+
+windows vm install company portal app
+---
+windoes -- Micosoft store -- Company Portal -- get -- open
+
+login with m365 credentials (starting with p)
+
+settings -- sync
+
+requirement for the intune policy
+---
+Requirement 1 : BitLocker must be enabled on the OS drive
+Requirement 2 : Secure Boot must be enabled
+Requirement 3 : Minimum OS build: current stable release N-1 (latest known good: 22621.3155, so N-1 = 22621.2861)
+Requirement 4 : Windows Defender real-time protection must be on
+Requirement 5 : Firewall must be enabled for all profiles
+Requirement 6 : A PIN or password must be configured
+Requirement 7 : Device must not be jailbroken or rooted
+Grace period  : 7 days for all settings
+
+Create a new folder for day 6
+---
+vs code --  new folder -- day6
+
+Prompt to create document for complaince policy
+---
+you are a DWP engineer authoring a windows 11 Intune compliance policy. Translate the security baseline into Intune compliance policy settings.
+
+For each requirement give:
+	settings name: the exact Intune setting name
+	value: what to set it to
+	Effect: what this enforces in plain English
+	False-positive risk: what commonly cause this to flag healthy device as non complaint
+	recommendation: any adjustment to reduce false positives without weakening security
+
+Requirement 1 : BitLocker must be enabled on the OS drive
+Requirement 2 : Secure Boot must be enabled
+Requirement 3 : Minimum OS build: current stable release N-1 (latest known good: 22621.3155, so N-1 = 22621.2861)
+Requirement 4 : Windows Defender real-time protection must be on
+Requirement 5 : Firewall must be enabled for all profiles
+Requirement 6 : A PIN or password must be configured
+Requirement 7 : Device must not be jailbroken or rooted
+Grace period  : 7 days for all settings
+
+Flag any settings where the Intune UI path may have changes since your training data. If possible give me the latest UI Path.
+
+Save it as a document in day6 folder
+
+Prompt to identify the high risk policy
+---
+From the policy settings you just translated, identify the single setting most likely to cause a mass false-non-compliant event across a fleet of 10,000 devices during a Win11 migration.
+ 
+Explain:
+  - Why this setting is the highest risk
+  - The specific scenario in which it fires incorrectly
+  - The exact value you would set to prevent false positives while maintaining the security intent
+  - What to monitor in the first 24 hours after assigning this policy to confirm it is not causing false positives
+
+Prompt to get the validation steps
+---
+My Intune compliance policy has been assigned to all devices. The test device has just synced. Describe exactly:
+  1. Where to look in the Intune admin center to see the device's compliance status for this specific policy
+  2. What 'Compliant', 'Not compliant' and 'In grace period' mean for a device in terms of conditional access impact
+  3. If the device shows non-compliant on BitLocker despite BitLocker being enabled — what are the three most common
+     causes of this false positive and the fastest check for each
+Update the document with the validation steps also
+
+prompt to Diagnose an enrolment failure from an MDM diagnostic export
+---
+
+You are a DWP analyst reading an MDM diagnostic export from a device that failed Autopilot enrolment.
+ 
+From the export below, extract the scope facts only:
+  - Did enrolment succeed or fail? What is the error code?
+  - Is the device Azure AD joined?
+  - Is there an existing MDM enrolment?
+  - Did policy application succeed or fail?
+  - Is licensing correct?
+  - Is network connectivity healthy?
+ 
+Return only the scope facts in a bullet list. Do not hypothesise yet.
+ 
+Export:
+EnrollmentState : Failed
+ErrorCode       : 0x80180014
+ErrorDescription: The device is already enrolled in MDM.
+MDMEnrolled     : Yes (previous enrolment from 2023-11-04)
+EnrolmentSource : Legacy manual MDM enrolment
+ProfilesApplied : 0 of 4
+LastError       : 0x80070005 (Access denied)
+AzureADJoined   : Yes
+IntuneP1License : Yes
+AutopilotLicense: Yes
+Network         : All endpoints reachable, no proxy
+
+=== MDM Diagnostic Export ===
+Device     : DESKTOP-FB099
+User       : FINBRIDGE\rthomas
+Date       : 2024-03-15 09:22
+OS build   : 22621.2861
+ 
+--- EnrollmentStatus ---
+EnrollmentType    : Autopilot
+EnrollmentState   : Failed
+ErrorCode         : 0x80180014
+ErrorDescription  : The device is already enrolled in MDM.
+Timestamp         : 2024-03-15 09:18:44
+ 
+--- PolicyManager ---
+ProfilesAttempted : 4
+ProfilesApplied   : 0
+LastError         : 0x80070005 (Access denied)
+FailedProfile     : FinBridge-Win11-Security-Baseline
+Timestamp         : 2024-03-15 09:19:01
+ 
+--- ComplianceEngine ---
+EvaluationResult  : Could not evaluate
+Reason            : Enrolment not complete
+Timestamp         : 2024-03-15 09:19:45
+ 
+--- DeviceInfo ---
+AzureADJoined     : Yes
+MDMEnrolled       : Yes (previous enrolment)
+EnrolmentSource   : Legacy (manual MDM enrolment, 2023-11-04)
+AutopilotProfile  : FinBridge-Autopilot-Standard
+TPMVersion        : 2.0
+TPMStatus         : Ready
+SecureBoot        : Enabled
+ 
+--- NetworkCheck ---
+EndpointReach     : login.microsoftonline.com : OK
+EndpointReach     : enrollment.manage.microsoft.com : OK
+EndpointReach     : enterpriseregistration.windows.net : OK
+ProxyDetected     : No
+ 
+--- Licensing ---
+M365LicenseFound  : Yes
+IntuneP1License   : Yes
+AutopilotLicense  : Yes
+
+Prompt to get Generate a ranked differential
+---
+Based on these scope facts from an Autopilot enrolment failure, produce a ranked list of the 3 most likely causes. Most probable first. For each give:
+  - Why it fits the evidence
+  - The fastest check to confirm or eliminate it
+  - The specific remediation action if confirmed
+ 
+Do not invent error code meanings — treat 0x80180014 and 0x80070005 as given. If you know them, confirm.If uncertain, say so.
+
+Prompt for resolution and analysis document
+---
+The evidence points clearly to one root cause for this Autopilot enrolment failure.
+ 
+0x80180014 means the device already has an MDM enrolment record from 2023-11-04 (legacy manual enrolment). Autopilot
+cannot complete over a conflicting existing enrolment.
+ 
+Given this confirmed root cause, provide:
+  1. The exact remediation steps to remove the stale enrolment and allow Autopilot to complete (include both the Intune admin center steps and any device-side actions required)
+  2. The correct order of operations
+  3. The verification check to confirm Autopilot completes successfully after remediation
+  4. A preventive action to stop this recurring for other devices with legacy enrolments
+ 
+Be specific about the Intune admin center actions. Flag any step that requires device access (physical or remote) vs admin center only.
+
+Based on the data collected till now and analysis done and resolution finalized, create a detailed analysis document under day 6 folder
+
+Prompt to create RCA
+---
+Create a detailed rca document with all supporting evidence, time line , 5 why analysis and preventive action.save it a separate file under day 6
+
+Exercise - save it under day 6
+---
+Based on the RCA create a known error document, communication document, closure note, L1, L2/L3 Kb document.
+
+Create a day 7 folder
+---
+vscode -- training -- new folder -- day 7
+
+Deployment context for the lab
+---
+App               : FinBridge Connect v3.1 (.intunewin package)
+Target fleet      : 10,000 Win11 endpoints
+Deadline          : 3 weeks from today
+Known constraints : Finance team needs it by end of week 1 (500 users, highest priority) 5% of devices have older hardware (4GB RAM) that may struggle with v3.1 requirements
+Previous version  : v3.0 — no major issues on rollout
+Rollback option   : v3.0 is still available in Intune app catalog
+Detection rule    : checks for version string in registry
+
+Prompt to create the app catalog creation document
+---
+You are a DWP engineer writing a step-by-step guide for adding a Windows application to the Intune app catalog, to be used before any phased rollout can begin.
+
+Write a document under day7 folder covering:
+
+1. Where to add an app in Intune
+   - Exact navigation path (state that exact labels may vary by tenant version — instruct the reader to verify live)
+   - The app type to select for a Windows LOB app (.intunewin package) vs a Microsoft Store app vs a web link
+
+2. The required fields when creating an LOB Windows app
+   - App information (name, description, publisher, version)
+   - Program (install command, uninstall command, install behavior — system vs user context)
+   - Requirements (OS architecture, minimum OS version)
+   - Detection rules (how Intune knows the app installed successfully — registry key, MSI product code, or file path)
+   - Return codes (which exit codes mean success vs failure)
+
+3. Assignment basics
+   - The difference between Required, Available, and Uninstall assignment types
+   - Why a new app should be assigned to a small test/pilot group first, not the full 10,000-device fleet directly
+
+4. Verification steps
+   - How to confirm the app appears correctly in the catalog
+   - How to check install status on an assigned test device
+   - What "Not applicable", "Failed", "Installed" statuses mean
+
+Write this as a numbered, followable guide a DWP engineer could execute without prior Intune app-deployment experience. Flag any step where UI labels commonly vary between tenant versions and instruct the reader to verify against their own tenant rather than trusting the label given here.
+
+Application to use as the worked example throughout: FinBridge Connect v3.1, a Windows LOB app packaged as a .intunewin file,
+install command "FinBridgeConnect_Setup.exe /silent",
+uninstall command "FinBridgeConnect_Setup.exe /uninstall /silent",
+detection via registry key
+HKLM\SOFTWARE\FinBridge\Connect\Version = 3.1.
+
+Command to create a intunes app file
+---
+windows -- powershell
+
+New-Item -Path "C:\dwp-labs\7zip" -ItemType Directory -Force
+Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z2408-x64.msi" -OutFile "C:\dwp-labs\7zip\7zip.msi"
+Invoke-WebRequest -Uri "https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool/raw/master/IntuneWinAppUtil.exe" -OutFile "C:\dwp-labs\IntuneWinAppUtil.exe"
+C:\dwp-labs\IntuneWinAppUtil.exe -c "C:\dwp-labs\7zip" -s "7zip.msi" -o "C:\dwp-labs"
+
+
+Exercise:
+---
+update the document with correct option for app catalog
