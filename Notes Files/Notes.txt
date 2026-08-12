@@ -1929,3 +1929,386 @@ C:\dwp-labs\IntuneWinAppUtil.exe -c "C:\dwp-labs\7zip" -s "7zip.msi" -o "C:\dwp-
 Exercise:
 ---
 update the document with correct option for app catalog
+
+day 8:
+prompt to create a deployment plan
+You are a DWP engineer designing the phased Intune deployment plan for FinBridge Connect v3.1, which has just been added to the app catalog, to 10,000 Win11 endpoints over a 3-week deadline.
+
+Context:
+App : FinBridge Connect v3.1 (.intunewin package, already created and uploaded to the app catalog)
+Target fleet : 10,000 Win11 endpoints
+Deadline : 3 weeks from today
+Known constraints : Finance team needs it by end of week 1 (500 users, highest priority) 5% of devices have older hardware (4GB RAM) that may struggle with v3.1 requirements
+Previous version : v3.0 — no major issues on rollout, still available in the app catalog for rollback
+Detection rule : checks for version string in registry
+
+Produce a complete rollout plan covering all of the following:
+
+RING STRUCTURE
+Design Ring 1 (Pilot), Ring 2 (Early), Ring 3 (Broad):
+
+Size, duration, and who to include in each ring
+The purpose of each ring
+The Intune assignment group type to use for each
+ADVANCE CRITERIA
+For moving from Ring 1 to Ring 2, and Ring 2 to Ring 3, define:
+
+Install success rate (minimum % to advance)
+Error rate threshold (maximum % to still advance)
+User-reported issues (maximum ticket rate to advance)
+Monitoring period (minimum time before evaluating)
+Each criterion must be specific, measurable, observable in Intune reporting, and time-bound — not vague judgement calls. Also define one hold condition: what triggers a pause without a full rollback, with a specific example.
+ROLLBACK TRIGGERS
+Define explicit, measurable conditions that require halting the rollout and reverting to v3.0:
+
+Install failure rate: % and timeframe that triggers an automatic halt
+Application crash rate: threshold and timeframe that triggers rollback consideration
+Business-critical failure: one specific scenario that triggers immediate rollback regardless of percentage
+4GB RAM device failures: failure rate on the at-risk hardware group that triggers ring isolation
+For each trigger, also state who makes the rollback decision, how long the decision window is, and the exact Intune action to execute it (which assignment group changes, to which app version).
+FINANCE DEADLINE RESOLUTION
+The Finance team (500 users) needs the app by end of week 1, but the ring plan above may place them later than that.
+Resolve this conflict by evaluating two options:
+Option A — compress the pilot ring timeline to fit Finance into Ring 2 by end of week 1 (state minimum safe pilot duration, the risk this introduces, and a compensating control)
+Option B — treat Finance as a separate priority Ring 0 before the main pilot (state how Ring 0 is structured, its advance conditions, and its own rollback plan)
+Give ONE clear recommendation with justification — do not just describe both options and leave it open.
+
+Structure your answer under these four numbered headings exactly as given above, so each section can be reviewed and saved independently.Create it as a seprate document under day 7
+
+Exercise: Create a analysis and rca document based on below error
+[2024-03-15 10:01:00] AgentExecutor Starting app install: Adobe Acrobat Pro v23.6
+[2024-03-15 10:01:01] AppInstaller Install context: SYSTEM
+[2024-03-15 10:01:02] AppInstaller Package: AdobeAcrobatPro.intunewin
+[2024-03-15 10:01:03] AppInstaller Install command: msiexec /i AcrobatPro.msi /quiet
+[2024-03-15 10:01:44] AppInstaller Return code: 1603
+[2024-03-15 10:01:44] AppInstaller Install failed. Return code 1603.
+[2024-03-15 10:01:45] DetectionRule Running detection: registry check
+[2024-03-15 10:01:45] DetectionRule Key: HKLM\SOFTWARE\Adobe\Acrobat Reader\23.0
+[2024-03-15 10:01:45] DetectionRule Value: not found
+[2024-03-15 10:01:46] DetectionRule Detection result: Not detected
+[2024-03-15 10:01:47] AgentExecutor App install result: Failed
+[2024-03-15 10:01:47] AgentExecutor Retry scheduled: 60 minutes
+[2024-03-15 11:01:47] AgentExecutor Retry attempt 1: Adobe Acrobat Pro v23.6
+[2024-03-15 11:01:48] AppInstaller Install command: msiexec /i AcrobatPro.msi /quiet
+[2024-03-15 11:02:31] AppInstaller Return code: 1603
+[2024-03-15 11:02:32] AgentExecutor Retry 1 failed. Next retry: 60 minutes
+
+Prompt to group the user comments as themes
+You are a DWP analyst reviewing post-migration end-user fedback. Below are the 50 comments from the fin bridge staff after the win 11 migration
+
+Cluster them into themes, for each theme give,
+Theme name: short description label
+count: Number of comments in the theme
+quotes: 1-2 representative quotes (verbatim)
+severity: Blocker / Friction / Minor / Positive
+
+A blocker means the iser cannot work at all. Friction means it slows them down but yjeu can still work. Minor means cosmetic or low impact. Positive means not a problem
+
+Return the theme only - do not rank them
+
+comments:
+id,comment
+1,Cannot log in to AVD at all since this morning. Tried 3 times. Urgent.
+2,The new desktop icons look different, took me a sec to find Outlook.
+3,Printer on floor 3 not mapping automatically like it used to.
+4,Love how fast the new laptop is! Much better than before.
+5,VPN keeps dropping every 10 minutes, very frustrating for calls.
+6,Where did my desktop shortcuts go? Had to recreate them manually.
+7,Can’t access shared drive S: – says permission denied.
+8,Teams background blur option is missing now, minor but annoying.
+9,Login is so slow now, takes 5 minutes some mornings.
+10,Everything migrated fine for me, no complaints.
+11,Locked out of my account, IT hasn’t called back yet, 2 hours now.
+12,New start menu layout is confusing, hard to find my apps.
+13,Printer on floor 3 still broken, whole team can’t print client docs.
+14,My OneDrive files are missing! This is urgent, need them for a meeting.
+15,Small thing but the taskbar clock format changed, prefer old one.
+16,Second time this week I’ve been locked out after 2 failed attempts.
+17,Wallpaper reset to default, not a big deal but noticed it.
+18,Finance shared drive completely inaccessible since the migration.
+19,Printer mapping on floor 3 – IT said it would be fixed by now, still broken.
+20,Great support from the migration team, very smooth for me.
+21,Cannot sign in to AVD, keeps saying account locked.
+22,Some of my pinned taskbar apps disappeared after the update.
+23,OneDrive sync icon shows error, not sure if my files are safe.
+24,VPN drop happened again mid client call, very unprofessional.
+25,New Outlook look takes getting used to but otherwise fine.
+26,Third day in a row the floor 3 printer doesn’t map on login.
+27,Files that used to be on my desktop are just gone now.
+28,Appreciate how fast the new machine boots compared to old one.
+29,Account locked again, this is the third time this week.
+30,Minor annoyance – calculator app icon moved position.
+31,Cannot access S drive, blocking me from finishing month-end reports.
+32,Login taking over 4 minutes most mornings this week.
+33,No issues at all on my end, migration was seamless.
+34,OneDrive says files missing, I need the Q1 report by end of day.
+35,Printer floor 3 – can we please get an ETA, client meeting at 2pm.
+36,Font size in some apps looks slightly different, cosmetic only.
+37,Locked out first thing this morning, had to wait 20 minutes.
+38,New laptop battery life seems better than the old one, nice upgrade.
+39,VPN instability is really affecting my ability to join calls reliably.
+40,Everything working well for me since day one of the migration.
+41,Start menu search doesn’t find some apps I use daily.
+42,Missing files in OneDrive – checked three times, still not there.
+43,Printer on floor 3 – team has given up and is walking to floor 2 to print.
+44,Small UI tweaks here and there but nothing major to report.
+45,Account lockout happened right before an important client call.
+46,Really smooth transition overall, thank you to the IT team.
+47,VPN dropped 4 times in one hour today, unacceptable for client work.
+48,Desktop background and theme reset, easy fix but had to redo it.
+49,Login speed has been consistently slow all week, not just today.
+50,No problems to report, appreciate the quick rollout.
+
+Prompt to rank by volume and impact
+From the Themes you just identified, rank the top3 to act on today. Ranking must weigh Both volume (how many people) AND impact (Blocker/Friction/Minor) - not volume alone. A single Blocker comment can outrank 30 minor comments.
+
+For each of the top3, state:
+The theme name and count
+why it ranks and where it does
+The one sentence you would tell your manager about it
+
+If your instinct says to rank by count, override that instinct and re-rank considering severity.
+
+Save this ranking and all the idetified theme as a document under day 7
+
+Prompt to generate self service answers
+For eaxh of the top 3 themes, write a brief self service answer which the end user could follow themself. Each answer must:
+use plain language, no jargon
+Give 1-2 concrete steps the user can try themselves
+End with a clear line for when to connect the service desk and what details to share them for quick resolution
+say under 150 word per answer
+
+Write the content of the answers only, do not describe the issue technically. Keep it simple so that business user can follow. save this as a separate document under day 7
+
+Prompt for org level notification
+The sign in and lockout theme affects a growing number of users this morning and is trending upwards. Draft ONE proactive all-staff notice that gets ahead of the tickts wueue rather than waiting for individual reports. It should:
+Acknowledge the issue is know and being worked on
+Give the same self-service step we just created as a interim workaround
+state when to expect an update
+Ask users to stay calm and reassuring, under 200 words
+Not over promise a fix time which we dont have.
+save this as a separate document in day 7
+
+prompt to compare week 2 feedback with week 1
+Compare week 1 themes against week 2 feed back
+
+For each week-1 theme, state:
+
+Improving / Worsening / Resolved / Unchanged in week 2
+Evidence from week 2 comments supporting that judgement
+Also flag any NEW theme in week 2 that did not appear in week 1.
+
+Store this as a new file under day 7
+
+Week 2 comments:
+id,comment
+1,Login is back to normal now, thanks for the fix!
+2,Still can’t get the printer on floor 3 to map, this is week 2 now.
+3,OneDrive files all showing up fine now.
+4,New issue: Excel crashes when opening large spreadsheets.
+5,Printer issue on floor 3 still not resolved, very frustrating.
+6,Overall much smoother now, appreciate the quick turnaround.
+7,No more lockouts this week, good improvement.
+8,Excel keeps crashing on our biggest budget spreadsheet, happened 3 times today.
+9,Floor 3 printer – can someone just replace the thing at this point.
+10,VPN has been rock solid this week, no complaints.
+11,Files are all there now, no more OneDrive issues for me.
+12,Login speed is back to what it used to be, thank you.
+13,Excel crash is really disruptive, losing unsaved work each time.
+14,Still walking to floor 2 to print, floor 3 printer a lost cause at this point.
+15,Whatever was fixed with login has definitely helped, much better.
+16,New problem – Excel freezes for 30 seconds then crashes on large files.
+17,No issues to report this week, all smooth.
+18,Printer floor 3 is now a running joke on our team, still broken.
+19,Account lockouts have completely stopped, appreciate the fix.
+20,Excel crashing has become a real productivity problem for finance team.
+21,OneDrive sync working perfectly now.
+22,Login fast and reliable this week.
+23,Floor 3 printer still not mapped automatically, third week now actually.
+24,Excel large-file crash happened again, please look into this urgently.
+25,Great improvement overall since last week.
+26,No file issues anymore, all resolved.
+27,VPN stable, no drops this week at all.
+28,Printer on floor 3 – genuinely considering escalating this to my manager.
+29,Login working well, no complaints from me this week.
+30,Excel keeps crashing, this is now my biggest issue with the new setup.
+31,Everything mostly smooth except that printer on floor 3.
+32,Files all present, sync working as expected.
+33,New Excel crash issue – happens specifically with files over 10MB.
+34,Login and lockout issues from week 1 are fully resolved for me.
+35,Printer floor 3 still broken, at this point just send us a new printer.
+36,VPN and login both solid this week, thank you.
+37,Excel crash is new and quite disruptive, please prioritise.
+38,No further issues on my end, all good.
+39,OneDrive fully working, no more missing file reports from me.
+40,Floor 3 printer unresolved for two weeks running now, needs escalation.
+
+Prompt to analyse the dex signal
+Investigate a Digital Employee Experience (DEX) signal. From the export below, extract only the scope facts:
+
+Which device group is affected and how many devices?
+What changed and exactly when?
+What is the magnitude of the score drop?
+Is there an unaffected comparison group? What does it show?
+Return only the scope facts. Do not hypothesise about causes yet.
+
+=== Digital Employee Experience — Startup Performance ===
+Device group : Finance-Win11 (215 devices)
+Metric : Median startup time (login to usable desktop)
+
+Date Median startup (sec) Score (0-100)
+2026-08-01 18.2 82
+2026-08-02 17.9 83
+2026-08-03 17.5 84
+2026-08-04 41.3 61 <- overnight config change applied
+2026-08-05 43.8 59
+2026-08-06 42.1 60
+
+Comparison group: IT-Win11 (40 devices, NOT in scope for the
+config change)
+2026-08-03 16.8 85
+2026-08-04 17.1 84
+2026-08-05 16.9 85
+
+Change log: 2026-08-04 02:00 — new security baseline configuration
+profile deployed to Finance-Win11 group only (startup script added
+for compliance logging, additional Defender scan policy).
+
+prompt to create the analysis
+Based on these scope facts, produce a ranked list of the 3 most likely causes of the startup-performance drop. Most probable first. For each give:
+
+Why it fits the evidence, specifically the timing and the fact that the unaffected group had no config change
+The fastest check to confirm or eliminate it
+Weight your ranking heavily on the config change — the timing and the clean comparison group are strong evidence.
+
+save this as a analysis document under day 7
+
+Prompt for execitive notification
+Prepare a leadership update. From the themes and trend data created rill now, write a two-paragraph executive summary for a non-technical manager. Requirements:
+
+Paragraph 1: overall picture — how migration went for end users, in plain language
+Paragraph 2: what remains open and what is being done about it
+No raw counts or technical jargon (no ‘DEX score’, no ‘startup telemetry’) — translate into plain business language
+Confident but honest tone — do not oversell or hide unresolved issues
+Under 300 words total
+Create it as a separate document under day 7
+
+Exercise – save it under day 7 folder
+comments
+Can’t remote into any of my test VMs since the update, blocking my whole day.
+New ticketing system dashboard is a nicer colour scheme, small win.
+Second engineer this week locked out of the admin console entirely.
+Font in the new portal is slightly smaller, hard to read for some of us.
+Shared credentials vault is completely inaccessible, whole team blocked.
+Overall the rollout felt smoother than last time, appreciate it.
+Notification sounds changed, mildly annoying but not a big deal.
+Third day now I can’t access the credentials vault, this is urgent.
+Dashboard refresh is a bit slower than before, barely noticeable.
+Admin console lockouts happening across the whole team now, not just one person.
+Nice that the new theme supports dark mode properly now.
+My test VM access is still down, can’t do my job today either.
+No issues at all for me, everything’s working fine.
+Vault access still broken, escalated to my manager now.
+Small UI icon changes, took a second to adjust but fine.
+To do:
+cluster these comments to themes
+Rank top 2 theme to act today
+For top theme 1 create proactive notification
+
+Access m365 copilit
+acess m365 copilit on browser where you are logged in to intunes
+https://m365.cloud.microsoft
+
+Create day8 folder
+vscode – training – new folder – day8
+
+Deployment context for rolling out copilot for finance team users
+Department : Finance (~200 users)
+Data sensitivity: High — payroll, board packs, M&A documents, client financial data on shared drives
+Current state : SharePoint permissions inherited from a 2019 migration, never fully audited since
+Licensing : M365 E5 confirmed for all 200 users, Copilot add-on not yet assigned
+
+Prompt to create readiness checklist for copilot implemention for finance team – new chat
+You are a DWP engineer preparing a Microsoft 365 Copilot readiness checklist for a Finance department of ~200 users at a financial services company.
+
+Cover: licensing prerequisites, Microsoft 365 Apps client version requirements, identity/MFA readiness, SharePoint/OneDrive permissions and oversharing checks, sensitivity labelling, and an end-user comms/enablement step.
+
+Make it a practical, tickable checklist. Because this is a Finance department with high data sensitivity and permissions inherited from a 2019 migration that was never fully audited, explicitly weight the permissions and oversharing checks as the highest-priority items — not just one line among many.
+
+Department context:
+~200 users, M365 E5 licensed, Copilot add-on not yet assigned. SharePoint permissions inherited from a 2019 migration, never audited since. Data includes payroll, board packs, M&A documents, client financial data.
+
+save this as a document under day8 folder
+
+Prompt to Prioritise the checklist items
+From the checklist you just produced, rank the items into three tiers:
+MUST complete before rollout (blocking)
+SHOULD complete before rollout (high risk if skipped)
+CAN complete during/after rollout (lower risk)
+
+For this Finance context specifically, justify why the permissions/oversharing audit belongs in the MUST tier even though licensing and client version are technically simpler to verify.Create this as a seperate document
+
+Prompt for copilot incidenet triage
+You are a DWP engineer traiging copilot support tickets. For each ticket below produce:
+Likely cause : ranked, most probable first, from the list: permissions/access boundary, data indexing lag, sensitivity label restriction, license/client prerequisite issue, guest/external sharing limitation, genuine Copilot fault (should be your LAST resort, not first)
+Fastest check : the single fastest thing to check first
+Is this actually a Copilot bug? : Yes / No / Unclear, with justification
+
+Default to non-Copilot causes unless the evidence genuinely rules them all out. Do not invent a cause not suggested by the ticket text.
+
+id,ticket
+1,Finance lead: Copilot won’t summarise the Q3 board pack in SharePoint. “It’s right there, I can see it myself.”
+2,New hire (started yesterday): Copilot in Outlook seems to know nothing about my recent emails.
+3,HR manager: Asked Copilot in Word to pull data from a sensitive salary review spreadsheet, got “I don’t have access to that content.”
+4,Sales rep: Copilot in Teams can’t find a client contract that was shared with her via a guest link from another org.
+5,IT admin: Copilot suddenly stopped working for the whole Finance team this morning, was fine yesterday.
+6,Manager: Copilot found and summarised a file I don’t remember ever opening, from a folder I forgot I had access to.
+7,Analyst: Copilot gives generic answers, doesn’t seem to use any of our internal SharePoint content at all.
+8,Executive assistant: Copilot in Outlook can’t see a shared mailbox’s calendar that I manage on behalf of my director.
+
+save it as a document under day8
+
+Create a enduser communication for the issues
+Create a enduser communiation for all the ticket explaining the issue in the plain english and guiding them the next possible steps. save it as a seperate file
+
+Prompt for creating m365 copilot user guide
+you are a DWP engineer creating a 365copilot prompting guide for the end-users. Write a detailed ‘Copilot prompting starter guide’ for non-technical office staff at FinBridge. Requirements:
+
+2-3 concrete example prompts EACH for Outlook, Word, and Excel — real, usable examples, not abstract descriptions
+A simple ‘good prompt’ formula they can be remembered easily and reuse
+A short note on not pasting confidential client data into external AI tools (tie back to the data-safety habit from Day 1 of this programme)
+Friendly, plain tone, example-led not theory-led
+save it as a document under day 8
+
+Prompt to review the guide from end user prespective
+Read the guide you just wrote as if you are someone who has never used an AI tool before and is slightly nervous about getting it wrong. Flag:
+
+Any example prompt that assumes knowledge they might not have
+Any point where the tone feels technical rather than friendly
+Whether the data-safety note might scare them away from using Copilot at all, versus appropriately cautioning them
+Rewrite only the flagged sections.
+
+Exercise
+for the below copilot tickets create incident triage and end user communication
+
+Paralegal: Asked Copilot to summarise a client NDA in SharePoint,
+got “I don’t have access to that content.” The file is in a
+folder she’s never actually opened before, just heard about
+it in a meeting.
+
+New associate (started this week): Copilot in Outlook can’t
+find any of the case emails I need context on.
+
+Partner: Copilot surfaced and summarised a draft settlement
+from a matter I’m not assigned to. I didn’t know I could
+even see that folder.
+
+Legal ops manager: All 40 people on the Legal team suddenly
+lost Copilot access this morning, worked fine all last week.
+
+Contract specialist: Copilot gives vague, generic answers
+when I ask about clauses in our contract templates library,
+doesn’t seem to actually read the documents.
+
+Prompt to push the changes to repo
+commit all the changes and push it to the repo
