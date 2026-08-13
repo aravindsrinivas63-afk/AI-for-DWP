@@ -2312,3 +2312,87 @@ doesn’t seem to actually read the documents.
 
 Prompt to push the changes to repo
 commit all the changes and push it to the repo
+
+Prompt to push the changes to repo
+commit all the changes and push it to the repo
+
+Day 9
+batch2
+no Name Repo
+0 Trainer https://github.com/sathishbob/aifordwp
+1 Aravind Srinivas Vempali https://github.com/aravindsrinivas63-afk/AI-for-DWP
+2 Ashwin Khttps: https://github.com/ashwink467-prog/AiforDWP
+3 Aspakul Mallick https://github.com/asfakulmallik-sudo/AIFORASPDWP
+4 Balamurugan M - https://github.com/Balamurugan2610/DWP_Bala
+5 Bhanu Prakash Dubash
+6 Bopanna P G https://github.com/BopannaPG/aifordwp
+7 Deepak Kumar Singh-------- https://github.com/deepaksingh5920-cpu/AIforDWP
+8 Gawrav Menon https://github.com/Gawravmenon/AI-For-DWP
+9 Dinesh Rajendran https://github.com/dinadinesh91-coder/DWP-for-AI-services
+10 Diptesh Maitra: https://github.com/dipteshere/aifodwp
+11 Divesh Jamdar: https://github.com/jamdardivesh-coder/AIFORDWP
+12 Gopal Arjunan: https://github.com/gopalarjunan-1155/aifordwp
+13 Imran Jamadar: https://github.com/imranbaig36-spec/Imran
+14 Kalaiselvam Tamil Mani- https://github.com/kalaiselvamt/aifordwp-kt
+15 Malla Harish Kumar https://github.com/harishkumarmallav-commits/aifordwp
+16 Nayana Kumari Bekalnarendra- https://github.com/Nayana-Sia/AIfordwp
+17 Ajmal Ahmad https://github.com/AhmedAJMAL8981/AI-FOR-DWP
+18 Pradeep R ----------->> https://github.com/magiceagle7707-oss/AI-for-DWP
+19 Prashant Thumbar ---- https://github.com/prashantthumbar/DWP-Training
+20 Prathamesh Gavade https://github.com/prathmesh808/AIForDWP
+21 Raja Ramasamy-- https://github.com/rajaramasamyg-crypto/AIfordwp
+22 Rohit Rane— https://github.com/rockyrohitrane-sudo/aiforDWP
+23 Shari Mol https://github.com/molshari04-lgtm/aifordwp
+24 Shuvrojit Barua https://github.com/8013071108/aifordwp
+25 Souvik Pal: https://github.com/Souvik-Pal07/DWP-SouvikPal
+26 Sowvik Singha Deb: https://github.com/sowviksdeb/AI-for-DWP
+27 Subash Selvaraj https://github.com/subaz21/aifordwp.git
+28 Tanni Das- https://github.com/Tanni26/AI-for-DWP
+29 Vanishri Rama Moger https://github.com/vanishri-resource/aifordwp
+30 Vimal Narashima Sharma -----> https://github.com/Vimal-Narashima/aifordwp
+
+Install azure cli on lab server
+https://aka.ms/installazurecliwindowsx64
+
+Login to azure cli
+windows – cmd
+
+az login --use-device-code
+
+Follow the onscreen instruction and press enter.
+
+Prompt to create avd
+You are a DWP (Desktop Workplace) engineer with Azure CLI access, setting up Azure Virtual Desktop for a Windows 11 workplace migration project.
+
+You have Azure CLI installed and authenticated on this machine.
+
+Set up Azure Virtual Desktop end to end:
+
+Environment:
+Subscription ID : {your subscription id}
+Resource group : {your resource group name}
+Region : East US
+Microsoft 365 tenant : zippyops.in
+M365 account : {your m365 id}
+
+Build:
+
+A pooled host pool named POOL-FIN-01 — breadth-first load balancing, max 5 sessions per host
+A Desktop application group, registered to a workspace named FinBridge-Workspace
+One session host VM — Windows 11 multi-session (AVD-optimised image), Standard_B2ms size, Trusted Launch with Secure Boot and vTPM enabled
+The session host must be Microsoft Entra ID joined only (no on-premises Active Directory exists in this environment)
+Assign my M365 account the roles needed to both RDP into the VM directly and connect to the published desktop through the AVD client
+Before starting, confirm what Azure role your own signed-in identity has on this subscription/resource group. If you do not have permission to create role assignments, stop and tell me explicitly rather than silently skipping that step.
+
+Execute the commands yourself using the CLI on this machine. Verify each step actually succeeded before moving to the next rather than assuming success, and if a session host doesn’t reach a healthy “Available” status after creation, diagnose why using the VM’s own logs/services rather than just re-running the same command again.
+
+Confirm at the end by showing the session host’s actual status and provide details to login to the host using my m365 account
+
+url to access the rdp
+https://client.wvd.microsoft.com/arm/webclient
+
+Create a new folder for day 9
+vscode – training – new folder – day
+
+prompt to document the process
+Create document for the proviosining based on the steps you followed and scri[ts you created under day 9 folder. If you created any scripts move them to day9 folder

@@ -1,0 +1,1 @@
+Get-WinEvent -ListLog * | Where-Object { $_.LogName -match 'RDInfra|RDAgent|WVD|WindowsVirtualDesktop|RemoteDesktop' } | Select-Object LogName,RecordCount,IsEnabled | Sort-Object LogName | Format-Table -AutoSize | Out-String
