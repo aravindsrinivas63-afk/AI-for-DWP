@@ -2395,4 +2395,177 @@ Create a new folder for day 9
 vscode – training – new folder – day
 
 prompt to document the process
-Create document for the proviosining based on the steps you followed and scri[ts you created under day 9 folder. If you created any scripts move them to day9 folder
+Create document for the proviosining based on the steps you followed and scripts you created under day 9 folder. If you created any scripts move them to day9 folder
+
+Prompt to get the scope of citrix vdi issue based on log
+You are a DWP analyst investigating a VDI session launch failure. From the logs below, extract:
+
+Which pool is affected, and how many users?
+What is the exact broker error?
+What does the machine catalog registration status show, for both the affected and unaffected pool?
+What does the Delivery Controller health check show, for both controllers?
+Return only scope facts. Do not conclude a root cause yet.
+
+Data:
+=== Citrix Session Broker Log ===
+Affected : 22 of 30 users on FinBridge-VDI-Pool-02
+Unaffected : FinBridge-VDI-Pool-01 (same site, different pool)
+
+[08:58:03] Session launch requested: user jsmith, Pool-02
+[08:58:04] Broker: Querying available machines in Pool-02
+[08:58:34] Broker: Timeout waiting for machine registration response (30000ms exceeded)
+[08:58:34] Session launch FAILED: error 1030 ‘No machines available in the desktop group’
+
+=== Delivery Controller machine catalog status ===
+Pool-02 catalog : 25 machines provisioned
+Registered : 3
+Unregistered : 22
+Maintenance mode : 0
+
+Pool-01 catalog : 20 machines provisioned
+Registered : 19
+Unregistered : 1
+
+=== Unregistered machine detail (sample, Pool-02) ===
+VDI-P02-014: Last registration attempt 06:15:22, failed
+Error: Unable to contact Delivery Controller
+dc-vdi-02.finbridge.local:80 - connection refused
+
+VDI-P02-017: Last registration attempt 06:16:01, failed
+Error: Unable to contact Delivery Controller
+dc-vdi-02.finbridge.local:80 - connection refused
+
+=== Delivery Controller health: dc-vdi-02 ===
+Service ‘Citrix Broker Service’ : STOPPED
+Last known running : yesterday 23:40
+Windows Update installed : today 00:15 (reboot required flag set, host not rebooted)
+
+=== Delivery Controller health: dc-vdi-01 (serves Pool-01) ===
+Service ‘Citrix Broker Service’ : RUNNING
+Uptime : 14 days
+
+Prompt to create the analysis and rca document
+Based on these scope facts from an Citix session failure, produce a ranked list of the 3 most likely causes. Most probable first. For each give:
+
+Why it fits the evidence
+The fastest check to confirm or eliminate it
+The specific remediation action if confirmed
+Do not invent error code meanings — If you know them, confirm. If uncertain, say so.
+
+Based on the data shared earlier finalize the one hypothesis and for that provide:
+
+The exact remediation steps to resolve the issue
+The correct order of operations
+The verification check to confirm resolution after remediation
+A preventive action to stop this recurring
+Based on data collected till now and analysis done and resolution finalized, create a detailed analysis document under day 9 folder also Create a detailed rca document with all supporting evidence, time line , 5 why analysis and preventive action. save it a separate file under day 9
+
+Prompt to create a dociment to set these security base line using JAMF configuration
+You are a DWP engineer translating a security baseline into JAMF configuration profile settings for macOS, for a 25-device Design team fleet.
+
+For each requirement give:
+Payload type : the JAMF configuration profile payload this setting lives under (e.g. Security & Privacy, Restrictions, Login Window)
+Value : what to set it to
+Effect : what this enforces in plain English
+False-positive risk : what commonly causes this to flag healthy devices incorrectly
+
+Flag any setting where the exact JAMF UI/payload naming may have changed since your training data — instruct the reader to verify against their own JAMF instance rather than trusting an exact label from this response, same discipline as the Intune labs on Day 6.
+
+Baseline:
+
+FileVault disk encryption must be enabled
+Gatekeeper must be enabled (identified developers only)
+Minimum macOS version: current stable minus one point release
+Firewall must be enabled
+Login password required after sleep/screen saver
+Automatic security updates enabled
+Create this as a document under day9
+
+Incase if the document is not detailled use this prompt to make it as detailled as intune document
+@{refere intues document} make this document as detailled as the refered intune document
+
+Exercise — Correlate a cold cross-tool scenario
+Scenario: Legal (Floor 6, 45 devices) reports a wave of app crashes this morning. Two data sources are available. Neither alone tells the whole story.
+
+Source 1 — Nexthink DEX export:
+
+Device group : Legal-Win11 (45 devices)
+
+Date Time DEX Score App crash rate Disk I/O
+2024-03-25 08:00 91 0.1% Normal
+2024-03-25 09:00 90 0.2% Normal
+2024-03-25 10:00 58 6.2% High
+2024-03-25 11:00 55 6.8% High
+
+Top crashing process (10:00-11:00): DocManager.exe (74% of all crashes in this window)
+
+Source 2 — SCCM deployment log:
+
+[09:38:20] Deployment started: ‘Legal Document Manager v2.1’ to collection Legal-Win11 (45 devices)
+[09:44:07] Install completed: 45 of 45 devices
+[09:44:07] Install result: Success, 0 failures
+
+Package details:
+Previous version deployed : Document Manager v2.0 (stable, deployed 6 weeks ago)
+New version : Document Manager v2.1 Vendor release notes: ‘v2.1 includes a new auto-save feature. Known limitation: on devices with under 8GB RAM, the auto-save indexing process can cause high disk I/O and intermittent crashes during the first few hours after installation while the initial index builds.’
+Legal-Win11 fleet hardware: 60% have 8GB RAM, 40% have 4GB RAM
+
+Expectation:
+Establish scope facts from both sources
+Correlate timing and content across the two data sources (not just read them separately)
+Create a analysis and rca document out of it
+
+Day 10 Capstone — The Floor 6 Incident
+Format: Individual · Duration: Full day · Deliverable: under project directory
+
+The problem
+It’s Monday morning. FinBridge’s Floor 6 (Legal, 45 people, recently migrated to Win11 and enrolled in Intune) is in chaos.
+
+You have exactly this much information to start with — everything else you have to find, verify, or produce yourself:
+
+09:14 — Slack from IT Ops lead:
+“Floor 6 is a mess this morning. At least a dozen people can’t log in or it’s taking forever. One paralegal says Copilot pulled up a client matter she swears she’s never had access to — that one worries me. Someone else says their desktop shortcuts vanished. We rolled out a new document management app to that floor on Friday afternoon. Can you get to the bottom of this and tell me what’s actually going on, what we do right now, and what we tell the partners by lunch? I need something I can actually hand to non-technical people.”
+
+That’s it. No logs are handed to you. No pre-built export exists. You must decide what evidence you’d need, state what you’d check, and reason through it the way you did all week — applying the patterns and discipline from Days 2–9 to a scenario you have not seen before.
+
+What you must produce
+Triage — first 30 minutes
+Separate the tangled problems in that one Slack message. For each, state what you’d check first and why, in order of urgency.
+
+The Copilot incident — handled correctly
+The “pulled up a matter she’s never had access to” line is not a support ticket. Explain what it actually is, what you would NOT do (close it as “AI weirdness”), and draft the two-sentence escalation it needs.
+
+A ranked differential for the login/performance problem
+Given a new app was deployed Friday afternoon to this exact floor, and issues appeared the following Monday, reason through the most likely causes, ranked, with a fastest check for each. State what evidence would confirm or rule out the deployment as the cause.
+
+3a. Build the check, don’t just describe it
+Write the actual PowerShell script you’d run against a Floor 6 device to gather the evidence for your top-ranked cause. Must include a dry-run mode. Must be generated with AI first, then hand-corrected — paste both versions side by side with a one-line note on what you fixed and why. Output must be structured enough for someone else to act on, not just status text.
+
+The immediate fix and the message to the floor
+Once you’ve reasoned to a most-likely cause: the technical action you’d take (if it’s the app deployment, the actual command to pull affected devices from that ring or roll it back — not a description), and a plain-language note to Floor 6 that reassures without over-promising a time you don’t control.
+4a. Runbook and the L1/L2 knowledge pair
+Write the runbook for the fix in Section 4 — prerequisites, numbered procedure with expected result after each step, verification, rollback. Then, from that single runbook, produce two knowledge articles:
+
+L1 self-service article — plain language, under 200 words, for a Floor 6 user who hits this again
+L2 technical article — full technical detail for the engineer who picks up the next occurrence
+
+Both must come from the same source runbook — re-expressed, not re-researched. Add a version header to all three documents.
+
+What you tell the partners by lunch
+One page. Zero jargon. What happened, what’s being done, what’s still open. This is the one artefact a non-technical reader will actually see.
+
+The prevention note
+One specific, nameable process change that would have caught this before Monday morning — not “test more,” but a concrete control.
+
+The one required reflection
+Include one moment where your first instinct was wrong — a cause you initially suspected that the evidence didn’t support, and what changed your mind. (Your Section 3a AI-correction can satisfy this if you tie it back explicitly.)
+
+Non-negotiables
+Every conclusion must show its reasoning, not just its answer.
+The Copilot incident must be correctly identified as a security signal, not a bug — the single clearest pass/fail marker in the exercise.
+At least one script must be shown both AI-generated and corrected by hand — the actual before/after.
+The runbook must be the single source for both the L1 and L2 articles — if the two look independently written rather than re-expressions of the same runbook, that’s a fail on this section.
+The partner-facing note must be genuinely readable by someone with zero technical background.
+
+Prompt to push the changes to repo
+commit all the changes and push it to the repo
